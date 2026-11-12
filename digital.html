@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="現場の課題を理解し、業務システム・AI活用・公式LINE・Web制作で事業の仕組みづくりを支援するVersion-Kのシステム開発。">
+<meta name="theme-color" content="#101f35"><title>システム開発・DX支援 | Version-K</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.digital-hero{min-height:650px}.digital-hero .hero-bg{background-image:url('images/business-system.png')!important;opacity:.38;background-position:center 42%}
+.digital-hero:after{background:linear-gradient(90deg,rgba(8,20,37,.96),rgba(16,31,53,.72) 58%,rgba(16,31,53,.32))!important}
+.digital-hero .hero-inner{max-width:900px}.digital-hero .hero-copy{font-size:14px;max-width:680px}
+.digital-kicker{font:12px 'Cormorant Garamond',serif;letter-spacing:3px;color:var(--vk-gold)!important}
+.digital-section{padding:100px 10%}.digital-section .lead{max-width:850px}
+.digital-intro{display:grid;grid-template-columns:1.05fr .95fr;gap:7%;align-items:center;margin-top:45px}
+.digital-intro img{width:100%;height:390px;object-fit:cover;border:1px solid rgba(197,164,106,.45)}
+.digital-quote{font-size:clamp(23px,3vw,34px);line-height:1.9;color:var(--vk-navy);font-weight:400}
+.digital-quote em{font-style:normal;color:#9c7a42}
+.digital-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:42px}
+.digital-card{padding:30px;background:#fff;border:1px solid rgba(197,164,106,.35);position:relative}
+.digital-card .num{font:22px 'Cormorant Garamond',serif;color:#a78348;letter-spacing:2px}
+.digital-card h3{font-size:18px;font-weight:500;margin:9px 0 12px;color:var(--vk-navy)}
+.digital-card p{font-size:12px;color:#687486;line-height:2.15;margin:0}
+.digital-card .sub{font:10px 'Cormorant Garamond',serif;letter-spacing:2px;color:#a78348}
+.digital-dark{background:var(--vk-navy);color:#fff}.digital-dark h2{color:#fff}.digital-dark .lead{color:#d5dce5}.digital-dark .digital-card{background:#172b46;border-color:rgba(197,164,106,.45)}.digital-dark .digital-card h3{color:#fff}.digital-dark .digital-card p{color:#d0d8e2}
+.rakubure{background:linear-gradient(135deg,#101f35,#1b2d47);color:#fff;padding:65px 7%;margin-top:50px;border:1px solid rgba(197,164,106,.6);display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;position:relative;overflow:hidden}
+.rakubure:before{content:'RAKUBURE';position:absolute;right:-15px;top:-38px;font:110px 'Cormorant Garamond',serif;color:rgba(255,255,255,.035);pointer-events:none}
+.rakubure .eyebrow{color:var(--vk-gold-light)!important}.rakubure h3{font-size:clamp(27px,3vw,38px);line-height:1.5;font-weight:400;margin:10px 0 18px}.rakubure p{font-size:12px;line-height:2.2;color:#d8dfE8}.rakubure-visual{border:1px solid rgba(197,164,106,.4);padding:28px;background:rgba(255,255,255,.04)}
+.rakubure-mark{font:42px 'Cormorant Garamond',serif;color:var(--vk-gold-light);letter-spacing:3px}.rakubure-mark span{display:block;font:10px 'Noto Serif JP',serif;letter-spacing:4px;color:#fff;margin-top:-4px}
+.rakubure-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.rakubure-list span{font-size:11px;padding:11px;border:1px solid rgba(197,164,106,.3);color:#f0e8d8}
+.rakubure-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.rakubure-actions .btn{margin-top:0}.rakubure-actions .btn-gold{background:var(--vk-gold);color:var(--vk-navy);font-weight:600}.rakubure-actions .btn-line{border:1px solid var(--vk-gold);color:#fff}
+.digital-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:38px}.flow-step{padding:23px 18px;background:#fff;border-top:2px solid var(--vk-gold)}.flow-step b{font:20px 'Cormorant Garamond',serif;color:#a78348}.flow-step h3{font-size:14px;margin:8px 0}.flow-step p{font-size:11px;color:#6d7888;line-height:2}
+.digital-tech{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}.digital-tech span{padding:9px 15px;border:1px solid rgba(197,164,106,.5);font-size:11px;color:var(--vk-navy);background:#fff}
+.digital-note{font-size:10px;color:#8b929d;margin-top:22px;line-height:1.9}
+@media(max-width:800px){.digital-section{padding:70px 7%}.digital-intro,.rakubure{grid-template-columns:1fr}.digital-intro img{height:270px}.digital-cards{grid-template-columns:1fr}.digital-flow{grid-template-columns:1fr 1fr}.rakubure{padding:38px 7%;gap:28px}.rakubure:before{font-size:65px}.digital-hero{min-height:560px}}
+@media(max-width:480px){.digital-flow{grid-template-columns:1fr}.rakubure-list{grid-template-columns:1fr 1fr}.digital-card{padding:24px}}
+
+/* Readability and contrast correction */
+.digital-hero .hero-inner{color:#fff!important}
+.digital-hero .hero-inner h1{color:#fff!important}
+.digital-hero .hero-inner h1 em{color:#e6d2a6!important}
+.digital-hero .hero-copy{color:#f1f3f6!important}
+.digital-hero .digital-kicker{color:#e6d2a6!important}
+.digital-section{color:#1d2b3d!important}
+.digital-section h2{color:#101f35!important}
+.digital-section .lead{color:#536174!important}
+.digital-section .digital-quote{color:#101f35!important}
+.digital-section .digital-quote em{color:#8b682f!important}
+.digital-card{color:#1d2b3d!important}
+.digital-card h3{color:#101f35!important}
+.digital-card p{color:#536174!important}
+.digital-card .num,.digital-card .sub{color:#8b682f!important}
+.digital-dark{background:#101f35!important;color:#fff!important}
+.digital-dark h2{color:#fff!important}
+.digital-dark .lead{color:#e1e7ef!important}
+.digital-dark .flow-step{background:#fff!important;color:#1d2b3d!important}
+.digital-dark .flow-step h3{color:#101f35!important}
+.digital-dark .flow-step p{color:#536174!important}
+.digital-dark .flow-step b{color:#8b682f!important}
+.digital-dark .digital-tech span{background:#fff!important;color:#101f35!important}
+.digital-dark .digital-kicker{color:#e6d2a6!important}
+.rakubure{color:#fff!important}
+.rakubure h3{color:#fff!important}
+.rakubure p{color:#e6ebf2!important}
+.rakubure .eyebrow{color:#e6d2a6!important}
+.rakubure-mark{color:#e6d2a6!important}
+.rakubure-mark span{color:#fff!important}
+.rakubure-list span{color:#fff!important;border-color:rgba(230,210,166,.55)!important}
+.rakubure-actions .btn-gold{background:#e0bd78!important;color:#101f35!important}
+.rakubure-actions .btn-line{color:#fff!important;border-color:#e0bd78!important}
+.digital-note{color:#657184!important}
+.digital-section .btn-dark{background:#101f35!important;color:#fff!important}
+@media(max-width:800px){.digital-hero .hero-inner{padding-right:7%}}
+
+
+
+/* Official Rakubure logo */
+.rakubure-visual{display:flex;flex-direction:column;align-items:center}
+.rakubure-logo-wrap{width:100%;display:flex;flex-direction:column;align-items:center;gap:13px;padding:5px 10px 22px}
+.rakubure-logo-image{display:block;width:min(100%,260px);height:210px;object-fit:contain;background:#fff;border-radius:8px;padding:10px;box-sizing:border-box}
+.rakubure-logo-wrap>span{font:10px 'Cormorant Garamond',serif;letter-spacing:2.4px;color:#e6d2a6;text-align:center}
+@media(max-width:800px){.rakubure-logo-image{width:min(100%,220px);height:185px}}
+
+
+/* RAKUBURE section: improve text contrast on navy background */
+.rakubure,
+.rakubure > div,
+.rakubure .eyebrow,
+.rakubure h3,
+.rakubure p,
+.rakubure-visual p,
+.rakubure-logo-wrap > span,
+.rakubure-list span {
+  color: #ffffff !important;
+}
+.rakubure .rakubure-list span {
+  border-color: rgba(255,255,255,.42) !important;
+}
+
+/* RAKUBURE product copy: enforce white text for legibility */
+.rakubure .eyebrow,
+.rakubure h3,
+.rakubure > div > p,
+.rakubure-visual > p,
+.rakubure-visual .rakubure-list span,
+.rakubure .rakubure-logo-wrap > span {
+  color: #ffffff !important;
+}
+.rakubure .rakubure-visual > p {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+/* ===== Version-K Digital page redesign ===== */
+:root{--digital-ink:#10233d;--digital-navy:#0b1c31;--digital-gold:#c7a66c;--digital-ivory:#f5f3ee;--digital-muted:#5b6878}
+body{background:#fff}
+.digital-hero{position:relative;isolation:isolate;min-height:690px;display:flex;align-items:center;overflow:hidden;background:#0b1c31}
+.digital-hero .hero-bg{background-image:url('images/digital-hero-visual.jpg')!important;background-size:cover!important;background-position:center right!important;opacity:.72!important;transform:scale(1.015)}
+.digital-hero:after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(7,21,39,.98) 0%,rgba(7,21,39,.92) 42%,rgba(7,21,39,.42) 75%,rgba(7,21,39,.18) 100%)!important}
+.digital-hero .hero-inner{position:relative;z-index:1;max-width:1180px;width:100%;padding:110px 7% 95px}
+.digital-hero .digital-kicker{display:flex;align-items:center;gap:16px;font:600 12px 'Cormorant Garamond',serif;letter-spacing:.24em;color:#e4c88f!important;margin-bottom:26px}
+.digital-hero .digital-kicker:after{content:"";width:58px;height:1px;background:#c7a66c}
+.digital-hero .hero-inner h1{font:500 clamp(34px,5vw,58px)/1.55 'Noto Serif JP',serif;letter-spacing:.025em;color:#fff!important;margin:0 0 22px;max-width:760px}
+.digital-hero .hero-inner h1 em{font-style:normal;color:#e2c58a!important}
+.digital-hero .hero-copy{font-size:15px;line-height:2.25;max-width:650px;color:#f1f4f8!important;margin:0 0 32px}
+.digital-hero .btn{border-radius:3px;padding:17px 28px;letter-spacing:.04em}
+.digital-section{padding:clamp(72px,8vw,112px) max(7%,calc((100% - 1180px)/2));}
+.digital-section>.eyebrow{font:600 11px 'Cormorant Garamond',serif;letter-spacing:.24em;color:#9a7742!important;margin-bottom:16px}
+.digital-section>h2{font:500 clamp(28px,3.3vw,42px)/1.55 'Noto Serif JP',serif;letter-spacing:.02em;color:#10233d!important;margin:0 0 18px}
+.digital-section>.lead{font-size:14px;line-height:2.25;color:#596779!important;max-width:820px}
+.digital-intro{gap:7%;margin-top:52px;align-items:center}
+.digital-intro>div{padding:12px 0}
+.digital-intro img{height:390px;border:0;border-radius:5px;box-shadow:0 20px 50px rgba(15,34,57,.13)}
+.digital-quote{font:500 clamp(23px,2.6vw,34px)/1.8 'Noto Serif JP',serif;letter-spacing:.02em}
+.digital-quote em{color:#9b7742!important}
+.digital-intro .lead{font-size:13px;line-height:2.35;color:#596779!important}
+.digital-section.soft{background:#f4f2ed}
+.digital-cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:42px}
+.digital-card{padding:28px 23px 30px;border:1px solid #e5e1d8;border-radius:7px;background:#fff;box-shadow:0 9px 26px rgba(16,35,61,.055);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;min-height:250px}
+.digital-card:hover{transform:translateY(-6px);box-shadow:0 17px 36px rgba(16,35,61,.11);border-color:#c7a66c}
+.digital-card .num{display:inline-flex;width:39px;height:39px;align-items:center;justify-content:center;border:1px solid #d8c49d;border-radius:50%;font-size:17px;color:#987442!important}
+.digital-card .sub{display:block;margin-top:19px;font-size:9px;letter-spacing:.19em;color:#987442!important}
+.digital-card h3{font-size:16px;line-height:1.7;font-weight:600;margin:9px 0 12px;color:#10233d!important}
+.digital-card p{font-size:12px;line-height:2.15;color:#5b6878!important}
+.digital-note{font-size:11px;color:#697586!important;margin-top:24px}
+.rakubure{margin:48px 0 0;padding:clamp(32px,5vw,64px);grid-template-columns:1fr .9fr;gap:38px;border:1px solid rgba(199,166,108,.65);border-radius:9px;background:radial-gradient(circle at 85% 18%,rgba(54,85,119,.45),transparent 34%),linear-gradient(135deg,#0b1c31,#172e4b);box-shadow:0 22px 55px rgba(11,28,49,.16)}
+.rakubure:before{font-size:clamp(70px,10vw,130px);right:0;top:-24px;color:rgba(255,255,255,.035)}
+.rakubure .eyebrow{font:600 11px 'Cormorant Garamond',serif;letter-spacing:.23em;color:#e4c88f!important}
+.rakubure h3{font:500 clamp(27px,3.2vw,40px)/1.6 'Noto Serif JP',serif;color:#fff!important;margin:14px 0 18px}
+.rakubure p{font-size:13px;line-height:2.25;color:#fff!important}
+.rakubure-actions{margin-top:28px;gap:12px}
+.rakubure-actions .btn{border-radius:4px;padding:14px 18px;font-size:12px}
+.rakubure-actions .btn-gold{background:#d9bd86!important;color:#10233d!important;border:1px solid #d9bd86}
+.rakubure-actions .btn-line{background:transparent;color:#fff!important;border:1px solid rgba(226,197,138,.8)!important}
+.rakubure-visual{align-self:center;padding:25px;border:1px solid rgba(226,197,138,.4);border-radius:7px;background:rgba(255,255,255,.055)}
+.rakubure-logo-image{height:190px;max-width:220px;object-fit:contain}
+.rakubure-logo-wrap>span{color:#e4c88f!important}
+.rakubure-list{gap:9px;margin-top:14px}
+.rakubure-list span{padding:12px 9px;border-radius:4px;border:1px solid rgba(226,197,138,.38)!important;color:#fff!important;text-align:center;font-size:11px}
+.rakubure-visual>p{margin:16px 0 0;font-size:12px;color:#fff!important}
+.digital-dark{background:linear-gradient(135deg,#0b1c31,#142b45)!important;padding-top:92px;padding-bottom:92px}
+.digital-dark>h2{color:#fff!important}
+.digital-dark>.lead{color:#e1e7ef!important}
+.digital-flow{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:42px}
+.flow-step{border:1px solid rgba(226,197,138,.35);border-top:2px solid #c7a66c;border-radius:6px;padding:25px 20px;background:#fff!important;box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.flow-step b{font-size:22px;color:#987442!important}
+.flow-step h3{font-size:15px;color:#10233d!important;margin:12px 0 8px}
+.flow-step p{font-size:12px;line-height:2;color:#5b6878!important}
+.digital-tech{gap:10px;margin-top:32px}
+.digital-tech span{border-radius:3px;border-color:rgba(226,197,138,.48);padding:10px 14px;color:#fff!important;background:rgba(255,255,255,.07)!important}
+.digital-dark+.digital-section{background:#f4f2ed}
+.digital-section:last-of-type{padding-top:86px;padding-bottom:100px;text-align:center;background:#f4f2ed}
+.digital-section:last-of-type>.lead{margin:0 auto 28px}
+.digital-section:last-of-type .btn-dark{display:inline-flex;background:#10233d!important;color:#fff!important;border:1px solid #c7a66c;border-radius:4px;padding:17px 28px}
+@media(max-width:980px){.digital-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.digital-hero{min-height:620px}.rakubure{grid-template-columns:1fr 1fr}.digital-flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.digital-hero{min-height:600px}.digital-hero .hero-bg{background-position:62% center!important;opacity:.48!important}.digital-hero:after{background:linear-gradient(90deg,rgba(7,21,39,.97),rgba(7,21,39,.78))!important}.digital-hero .hero-inner{padding:90px 7% 75px}.digital-hero .hero-copy{font-size:13px}.digital-intro{grid-template-columns:1fr;gap:25px}.digital-intro img{height:260px}.rakubure{grid-template-columns:1fr;padding:30px 22px}.rakubure-visual{padding:20px}.rakubure-logo-image{height:155px}.digital-section{padding:68px 6%}.digital-section:last-of-type{padding:70px 6%}}
+@media(max-width:480px){.digital-cards{grid-template-columns:1fr}.digital-card{min-height:0}.digital-flow{grid-template-columns:1fr}.rakubure-actions{flex-direction:column}.rakubure-actions .btn{width:100%;text-align:center;justify-content:center}.rakubure-list{grid-template-columns:1fr 1fr}}
+
+</style>
+<link rel="stylesheet" href="premium-final.css">
+<link rel="stylesheet" href="modern-luxury.css">
+
+<style id="digital-readable-redesign">
+/* Clean, high-contrast redesign */
+body{background:#fff!important;color:#17263b!important}
+.header{background:#0d2038!important}
+.digital-hero{min-height:620px!important;background:#f7f8fa!important;display:flex!important;align-items:center!important;overflow:hidden!important}
+.digital-hero .hero-bg{inset:0 0 0 48%!important;background-image:url('images/business-system.png')!important;background-size:cover!important;background-position:center!important;opacity:1!important;transform:none!important}
+.digital-hero:after{content:""!important;position:absolute!important;inset:0!important;background:linear-gradient(90deg,#f7f8fa 0%,#f7f8fa 43%,rgba(247,248,250,.9) 49%,rgba(247,248,250,.08) 76%,rgba(247,248,250,0) 100%)!important;z-index:0!important}
+.digital-hero .hero-inner{position:relative!important;z-index:2!important;width:100%!important;max-width:1240px!important;padding:105px 7%!important;color:#17263b!important}
+.digital-hero .digital-kicker{font:700 12px 'Cormorant Garamond',serif!important;letter-spacing:.22em!important;color:#98713b!important;margin-bottom:24px!important}
+.digital-hero .digital-kicker:after{content:""!important;display:inline-block!important;width:55px!important;height:1px!important;background:#b58a4b!important;margin-left:15px!important;vertical-align:middle!important}
+.digital-hero .hero-inner h1{font:600 clamp(32px,4.4vw,54px)/1.55 'Noto Serif JP',serif!important;letter-spacing:.015em!important;color:#10233d!important;max-width:680px!important;margin:0 0 20px!important}
+.digital-hero .hero-inner h1 em{font-style:normal!important;color:#9a7138!important}
+.digital-hero .hero-copy{font-size:15px!important;line-height:2.15!important;color:#3f4e61!important;max-width:590px!important;margin:0 0 30px!important}
+.digital-hero .btn{background:#10233d!important;color:#fff!important;border:1px solid #b58a4b!important;border-radius:4px!important;padding:16px 25px!important}
+.digital-section{padding:82px max(6%,calc((100% - 1160px)/2))!important}
+.digital-section>.eyebrow{font:700 11px 'Cormorant Garamond',serif!important;letter-spacing:.24em!important;color:#98713b!important;margin-bottom:14px!important}
+.digital-section>h2{font:600 clamp(27px,3.1vw,39px)/1.55 'Noto Serif JP',serif!important;color:#10233d!important;margin:0 0 16px!important}
+.digital-section>.lead{font-size:14px!important;line-height:2.15!important;color:#48576a!important;max-width:850px!important}
+.digital-intro{margin-top:38px!important;gap:6%!important}
+.digital-intro img{border:0!important;border-radius:6px!important;box-shadow:0 12px 32px rgba(16,35,61,.12)!important}
+.digital-quote{color:#10233d!important;font-weight:600!important}
+.digital-quote em{color:#98713b!important}
+.digital-intro .lead{color:#48576a!important}
+.digital-section.soft{background:#f3f5f7!important}
+.digital-cards{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px!important}
+.digital-card{background:#fff!important;border:1px solid #e0e5eb!important;border-radius:8px!important;padding:25px 21px!important;box-shadow:0 5px 18px rgba(16,35,61,.06)!important;min-height:245px!important;transition:transform .2s ease,box-shadow .2s ease!important}
+.digital-card:hover{transform:translateY(-4px)!important;box-shadow:0 12px 26px rgba(16,35,61,.11)!important}
+.digital-card .num{color:#98713b!important}
+.digital-card .sub{color:#98713b!important}
+.digital-card h3{color:#10233d!important;font-size:16px!important;font-weight:700!important;line-height:1.7!important}
+.digital-card p{color:#4b596b!important;font-size:12px!important;line-height:2.05!important}
+.digital-note{color:#647184!important;font-size:11px!important}
+.rakubure{margin-top:42px!important;padding:44px!important;grid-template-columns:1.1fr .9fr!important;gap:35px!important;border-radius:8px!important;background:#10233d!important;border:1px solid #c5a46a!important;box-shadow:0 12px 30px rgba(16,35,61,.12)!important}
+.rakubure:before{display:none!important}
+.rakubure .eyebrow{color:#e4c88f!important;font-weight:700!important;letter-spacing:.18em!important}
+.rakubure h3{color:#fff!important;font-size:clamp(27px,3vw,38px)!important;line-height:1.55!important;font-weight:600!important}
+.rakubure p{color:#fff!important;font-size:13px!important;line-height:2.15!important}
+.rakubure-actions .btn{border-radius:4px!important;padding:14px 18px!important}
+.rakubure-actions .btn-gold{background:#e0bd78!important;color:#10233d!important}
+.rakubure-actions .btn-line{border:1px solid #e0bd78!important;color:#fff!important}
+.rakubure-visual{background:#fff!important;border:1px solid #e2e7ed!important;border-radius:7px!important;padding:22px!important}
+.rakubure-logo-image{background:#fff!important}
+.rakubure-logo-wrap>span{color:#8c6b37!important}
+.rakubure-list span{background:#f5f7f9!important;border:1px solid #dce2e8!important;color:#17263b!important;border-radius:4px!important}
+.rakubure-visual>p{color:#26364b!important;font-weight:600!important}
+.digital-dark{background:#f1f3f5!important;color:#17263b!important}
+.digital-dark>h2{color:#10233d!important}
+.digital-dark>.lead{color:#48576a!important}
+.digital-flow{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:15px!important}
+.flow-step{background:#fff!important;border:1px solid #e0e5eb!important;border-top:3px solid #b58a4b!important;border-radius:7px!important;padding:24px 20px!important;box-shadow:0 5px 16px rgba(16,35,61,.05)!important}
+.flow-step b{color:#98713b!important}
+.flow-step h3{color:#10233d!important;font-weight:700!important}
+.flow-step p{color:#4b596b!important}
+.digital-tech span{background:#fff!important;color:#24354b!important;border:1px solid #dce2e8!important;border-radius:4px!important}
+.digital-section:last-of-type{background:#fff!important;text-align:center!important}
+.digital-section:last-of-type>.lead{margin:0 auto 25px!important}
+.digital-section:last-of-type .btn-dark{background:#10233d!important;color:#fff!important;border:1px solid #b58a4b!important;border-radius:4px!important;padding:16px 26px!important}
+@media(max-width:900px){
+.digital-hero .hero-bg{inset:0 0 0 35%!important;opacity:.45!important}
+.digital-hero:after{background:linear-gradient(90deg,#f7f8fa 0%,rgba(247,248,250,.96) 48%,rgba(247,248,250,.48) 100%)!important}
+.digital-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.rakubure{grid-template-columns:1fr 1fr!important;padding:30px!important}
+.digital-flow{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:640px){
+.digital-hero{min-height:590px!important}
+.digital-hero .hero-bg{inset:0!important;opacity:.18!important}
+.digital-hero:after{background:rgba(247,248,250,.88)!important}
+.digital-hero .hero-inner{padding:85px 7%!important}
+.digital-hero .hero-copy{font-size:13px!important}
+.digital-section{padding:64px 6%!important}
+.digital-intro,.rakubure{grid-template-columns:1fr!important}
+.digital-intro img{height:245px!important}
+.digital-cards,.digital-flow{grid-template-columns:1fr!important}
+.digital-card{min-height:0!important}
+.rakubure{padding:25px 20px!important}
+.rakubure-actions{flex-direction:column!important}
+.rakubure-actions .btn{width:100%!important;text-align:center!important}
+.rakubure-logo-image{height:150px!important}
+}
+</style>
+
+<link rel="stylesheet" href="site-reset.css">
+<link rel="stylesheet" href="modern-editorial.css">\n<link rel="stylesheet" href="vk-modern-system.css">
+
+<style>
+
+/* =========================================================
+   VERSION-K / FINAL CONTRAST FIX
+   Header logo + navigation: white on dark navy.
+   Dark promotional bands: white copy.
+   Light cards/boxes: deep navy copy.
+   ========================================================= */
+.header .logo,
+.header .logo a,
+.header .nav,
+.header .nav a,
+.header .nav a *,
+.suit-header .suit-logo,
+.suit-header .suit-nav,
+.suit-header .suit-nav a,
+.footer-nav a,
+.footer-links a {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+.header .logo img,
+.header a.logo img,
+.header .logo a img,
+.suit-header .suit-logo img {
+  filter: brightness(0) invert(1) !important;
+  opacity: 1 !important;
+}
+.header .nav a:hover,
+.suit-header .suit-nav a:hover,
+.footer-nav a:hover,
+.footer-links a:hover {
+  color: #e6d2a6 !important;
+}
+
+/* Dark blue / purple gradient promotional areas */
+.vk-product-band,
+.vk-product-band > *,
+.vk-product-band h1,
+.vk-product-band h2,
+.vk-product-band h3,
+.vk-product-band p,
+.vk-product-band li,
+.vk-product-band span,
+.vk-product-band small,
+.rakubure,
+.rakubure > div,
+.rakubure .eyebrow,
+.rakubure h1,
+.rakubure h2,
+.rakubure h3,
+.rakubure p,
+.rakubure li,
+.rakubure .rakubure-logo-wrap > span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Light product panels and boxes: dark readable typography */
+.rakubure-visual,
+.rakubure-visual > *,
+.rakubure-visual p,
+.rakubure-visual span,
+.rakubure-visual small,
+.rakubure-visual .rakubure-logo-wrap > span {
+  color: #10243f !important;
+  opacity: 1 !important;
+}
+.rakubure-visual {
+  background: #ffffff !important;
+  border: 1px solid rgba(16,36,63,.12) !important;
+}
+.rakubure-visual .rakubure-list span {
+  color: #10243f !important;
+  background: #f1f4f8 !important;
+  border: 1px solid #dce3eb !important;
+}
+.rakubure-visual > p {
+  color: #34465d !important;
+}
+.rakubure-logo-wrap > span {
+  color: #34465d !important;
+}
+
+/* Keep call-to-action labels legible on their own backgrounds */
+.rakubure-actions .btn-gold {
+  background: #d9bd86 !important;
+  color: #10243f !important;
+}
+.rakubure-actions .btn-line {
+  color: #ffffff !important;
+  border-color: #e6d2a6 !important;
+}
+.vk-product-card,
+.vk-product-card h3,
+.vk-product-card p,
+.vk-product-card span {
+  color: #10243f !important;
+}
+
+</style>
+
+
+
+
+<style id="rakubure-text-white-fix-final">
+/* 楽ブレ紹介：青〜紺のグラデーション背景上の文字をすべて白に */
+html body .digital-section .rakubure > div:first-child .eyebrow,
+html body .digital-section .rakubure > div:first-child h3,
+html body .digital-section .rakubure > div:first-child p,
+html body .digital-section .rakubure > div:first-child p *,
+html body .digital-section .rakubure > div:first-child h3 *,
+html body .digital-section .rakubure > div:first-child span,
+html body .digital-section .rakubure > div:first-child small {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+/* ラベル・説明文の薄いグレー指定を解除 */
+html body .digital-section .rakubure > div:first-child .eyebrow,
+html body .digital-section .rakubure > div:first-child p:not(.eyebrow) {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+/* ボタンは背景とのコントラストを維持 */
+html body .digital-section .rakubure .rakubure-actions .btn-gold {
+  color: #10243f !important;
+  -webkit-text-fill-color: #10243f !important;
+}
+html body .digital-section .rakubure .rakubure-actions .btn-line {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+</style>
+
+</head>
+<body>
+<header class="header"><a class="logo" href="index.html" aria-label="Version-K ホーム"><img src="images/version-k-main-logo.png" alt="Version-K"></a><button class="menu-btn" aria-label="メニュー" aria-expanded="false"><i></i><i></i></button><nav class="nav"><a href="index.html">TOP</a><a href="thought.html">想い</a><a href="index.html#business">事業内容</a><a href="company.html">会社概要</a><a href="recruit.html">採用</a><a class="nav-cta" href="contact.html">お問い合わせ ↗</a></nav></header>
+<main>
+<section class="hero digital-hero"><div class="hero-bg"></div><div class="hero-inner"><p class="eyebrow digital-kicker">VERSION-K / DIGITAL SOLUTIONS</p><h1>現場を知るから、<br><em>使われる仕組みをつくれる。</em></h1><p class="hero-copy">システムをつくること自体が目的ではありません。人材紹介・採用支援・LINEマーケティングの現場で見つけた課題を、AI・業務システム・Web・LINEで解決し、事業が前に進む仕組みへ変えていきます。</p><a class="btn btn-light" href="contact.html">開発・導入について相談する ↗</a></div></section>
+<section class="section digital-section"><p class="eyebrow dark digital-kicker">OUR APPROACH</p><h2>開発の出発点は、<br>現場にある課題。</h2><p class="lead">Version-Kのシステム開発は、技術ありきではありません。日々の業務で感じる「時間がかかる」「情報が散らばる」「対応が属人化する」といった悩みを整理し、必要な機能を必要な形で設計します。</p><div class="digital-intro"><div><p class="digital-quote">つくって終わりではなく、<br><em>使い続けられる仕組み</em>を。</p><p class="lead">人材紹介・採用支援・LINE運用を自ら手がけてきた経験を活かし、利用する人の動線や運用負荷まで考えた仕組みづくりを大切にしています。小さく始めて、実際の使われ方を見ながら改善していく。現場に根づくシステムを目指します。</p></div><img src="images/business-system.png" alt="システム開発・デジタル業務支援のイメージ"></div></section>
+<section class="section soft digital-section"><p class="eyebrow dark digital-kicker">WHAT WE DO</p><h2>課題に合わせて、<br>必要な仕組みを組み立てる。</h2><p class="lead">既存サービスの導入から、業務に合わせた独自ツールの開発、AIを活用した自動化まで。目的と運用体制に合わせてご提案します。</p><div class="digital-cards">
+<article class="digital-card"><span class="num">01</span><p class="sub">CUSTOM SYSTEM</p><h3>業務システム・管理ツール開発</h3><p>顧客・求職者・案件・進捗などの情報を整理し、日々の管理や共有を効率化。GoogleスプレッドシートやWeb画面を活用した業務ツールを設計・構築します。</p></article>
+<article class="digital-card"><span class="num">02</span><p class="sub">AI / AUTOMATION</p><h3>AI活用・業務自動化</h3><p>書類作成、情報整理、データ転記など、繰り返し発生する業務を見直し。AIや自動処理を組み合わせ、作業時間と入力負担の削減を目指します。</p></article>
+<article class="digital-card"><span class="num">03</span><p class="sub">LINE SOLUTION</p><h3>公式LINE構築・マーケティング</h3><p>LINE公式アカウント、Lステップ、L Message等を活用し、問い合わせ・予約・顧客フォロー・採用応募につながる導線を設計します。</p></article>
+<article class="digital-card"><span class="num">04</span><p class="sub">WEB / INTEGRATION</p><h3>Webサイト・フォーム・外部連携</h3><p>サービスサイトやLP、入力フォーム、データ連携などを構築。WebとLINE、社内の管理業務をつなぎ、情報が流れる仕組みを整えます。</p></article>
+</div><p class="digital-note">※対応範囲・開発方法・納期・費用は、要件や既存環境を確認したうえで個別にお見積もりします。</p></section>
+<section class="section digital-section"><p class="eyebrow dark digital-kicker">OUR PRODUCT</p><h2>現場の課題から生まれた、<br>自社プロダクト。</h2><p class="lead">自社の人材紹介・採用支援の業務課題を起点に、実際の書類作成フローを効率化するツールを開発しました。</p>
+<div class="rakubure"><div><p class="eyebrow">VERSION-K PRODUCT / 01</p><h3>書類作成を、<br>もっと簡単に。</h3><p>履歴書・職務経歴書などのPDFや面談内容を活用し、必要な書類づくりを効率化するAI書類作成支援ツール「楽ブレ」。人材紹介・採用支援の現場で感じてきた、書類作成や情報整理の負担を減らすために生まれました。</p><div class="rakubure-actions"><a class="btn btn-gold" href="https://infoversionk-collab.github.io/rakubure-hp/" target="_blank" rel="noopener">楽ブレ公式サイトを見る ↗</a><a class="btn btn-line" href="https://infoversionk-collab.github.io/rakubure-hp/" target="_blank" rel="noopener">機能・詳細を確認 ↗</a></div></div>
+<div class="rakubure-visual"><div class="rakubure-logo-wrap"><img class="rakubure-logo-image" src="images/rakubure-logo.png" alt="楽ブレ ロゴ"><span>RAKUBURE / AI DOCUMENT SUPPORT</span></div><div class="rakubure-list"><span>履歴書</span><span>職務経歴書</span><span>推薦状</span><span>BPOスキルシート</span></div><p>PDF・テキスト情報を活用し、書類作成から編集までをスムーズに。</p></div></div>
+</section>
+<section class="section digital-dark digital-section"><p class="eyebrow digital-kicker">HOW WE BUILD</p><h2>相談から運用まで、<br>一緒に形にする。</h2><p class="lead">最初から大規模な開発を前提にせず、目的・優先順位・予算に合わせて段階的に進めます。</p><div class="digital-flow"><div class="flow-step"><b>01</b><h3>ヒアリング</h3><p>現状の業務、困りごと、実現したい状態を整理します。</p></div><div class="flow-step"><b>02</b><h3>設計・ご提案</h3><p>必要な機能や運用フロー、開発範囲をご提案します。</p></div><div class="flow-step"><b>03</b><h3>開発・導入</h3><p>優先度の高い機能から構築し、動作を確認します。</p></div><div class="flow-step"><b>04</b><h3>運用・改善</h3><p>利用状況や課題を確認し、必要に応じて改善します。</p></div></div><div class="digital-tech"><span>Google Apps Script</span><span>HTML / CSS / JavaScript</span><span>Google Workspace</span><span>生成AI活用</span><span>LINE公式アカウント</span><span>業務フロー設計</span></div></section>
+<section class="section digital-section"><p class="eyebrow dark digital-kicker">LET'S TALK</p><h2>その業務課題、<br>仕組みで変えられるかもしれません。</h2><p class="lead">「何を自動化できるかわからない」「今の管理方法を見直したい」といった段階でも構いません。現状を伺い、課題の整理から一緒に考えます。</p><a class="btn btn-dark" href="contact.html">システム開発について相談する ↗</a></section>
+</main>
+<footer class="footer"><a class="logo" href="index.html" aria-label="Version-K ホーム"><img src="images/version-k-main-logo.png" alt="Version-K"></a><p>YOUR NEXT VERSION STARTS HERE.</p><nav class="footer-nav"><a href="index.html">TOP</a><a href="thought.html">想い</a><a href="index.html#business">事業内容</a><a href="company.html">会社概要</a><a href="recruit.html">採用</a><a href="contact.html">お問い合わせ</a><a href="https://infoversionk-collab.github.io/rakubure-hp/" target="_blank" rel="noopener">楽ブレ ↗</a></nav><div class="footer-bottom"><span>© <span id="year"></span> Version-K. All Rights Reserved.</span><a href="#">BACK TO TOP ↑</a></div></footer>
+<script src="script.js"></script>
+<script src="modern-motion.js"></script><script src="vk-motion.js" defer></script>
+</body></html>

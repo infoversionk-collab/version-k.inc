@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Version-Kの運営情報と事業内容をご紹介します。">
+<meta name="theme-color" content="#101f35"><title>会社概要 | Version-K</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.company-hero .hero-bg{background-image:url('images/yutaka-ricefield.jpg')!important;background-position:center 54%!important;opacity:.52}
+.company-hero:after{background:linear-gradient(90deg,rgba(10,23,40,.96),rgba(16,31,53,.38))!important}
+.company-content{background:#f7f5ef;color:#14243a}
+.company-content h2,.company-content h3{color:#14243a}
+.company-content p,.company-content li{color:#465468}
+.profile-table{width:100%;border-collapse:collapse;margin-top:32px;background:#fff}
+.profile-table th,.profile-table td{padding:20px 22px;border-bottom:1px solid #e7e1d6;text-align:left;vertical-align:top}
+.profile-table th{width:25%;font-weight:500;color:#76551f;letter-spacing:.06em;background:#f1eee7}
+.profile-table td{color:#35445a;line-height:1.9}
+.company-intro{max-width:850px;font-size:15px;line-height:2.5}
+.business-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.business-gallery figure{margin:0;background:#fff;border:1px solid #e8e2d8}
+.business-gallery img{width:100%;height:220px;object-fit:cover;display:block}
+.business-gallery figcaption{padding:14px 16px;color:#14243a;font-size:13px;letter-spacing:.04em}
+.business-gallery figcaption small{display:block;margin-top:5px;color:#76551f;font:11px 'Cormorant Garamond',serif;letter-spacing:.15em}
+.company-values{background:#101f35;color:#fff;padding:85px 8%;text-align:center}
+.company-values h2{color:#fff}.company-values p{max-width:820px;margin:20px auto;color:#e3e8ef;line-height:2.5}
+.company-contact{background:#1b2d47;color:#fff;text-align:center;padding:75px 8%}
+.company-contact h2{color:#fff}.company-contact p{color:#e3e8ef}
+.company-contact .btn{background:#c5a46a;color:#101f35}
+@media(max-width:760px){.business-gallery{grid-template-columns:repeat(2,1fr)}.business-gallery img{height:170px}.profile-table th,.profile-table td{padding:14px 12px}.profile-table th{width:32%}}
+@media(max-width:480px){.business-gallery{grid-template-columns:1fr}}
+
+
+/* Company page: clear business overview with compact supporting imagery */
+.company-business{background:#F1E9DC!important}
+.company-business .company-intro{margin-bottom:34px}
+.business-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:38px}
+.business-card{display:grid;grid-template-columns:150px minmax(0,1fr);align-items:stretch;gap:0;background:#fff;border:1px solid rgba(177,138,76,.38);box-shadow:0 8px 24px rgba(16,31,53,.045);min-height:160px}
+.business-card>img{width:150px;height:100%;min-height:160px;max-height:190px;object-fit:cover;display:block}
+.business-card-copy{padding:17px 19px}
+.business-card-copy>span{font:11px 'Cormorant Garamond',serif;letter-spacing:.12em;color:#8A672F}
+.business-card-copy h3{font-size:17px;line-height:1.6;margin:7px 0 6px;color:#14243A!important}
+.business-card-copy p{font-size:12px;line-height:1.9;margin:0;color:#465468!important}
+@media(max-width:800px){
+ .business-cards{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+ .business-card{grid-template-columns:112px minmax(0,1fr)}
+ .business-card>img{width:112px;min-height:150px}
+ .business-card-copy{padding:13px}
+ .business-card-copy h3{font-size:15px}
+ .business-card-copy p{font-size:11px}
+ .business-card-copy>span{font-size:10px}
+}
+
+</style><link rel="stylesheet" href="premium-final.css">
+<link rel="stylesheet" href="modern-luxury.css">
+<link rel="stylesheet" href="site-reset.css">
+<link rel="stylesheet" href="modern-editorial.css">\n<link rel="stylesheet" href="vk-modern-system.css">
+
+<style>
+
+/* =========================================================
+   VERSION-K / FINAL CONTRAST FIX
+   Header logo + navigation: white on dark navy.
+   Dark promotional bands: white copy.
+   Light cards/boxes: deep navy copy.
+   ========================================================= */
+.header .logo,
+.header .logo a,
+.header .nav,
+.header .nav a,
+.header .nav a *,
+.suit-header .suit-logo,
+.suit-header .suit-nav,
+.suit-header .suit-nav a,
+.footer-nav a,
+.footer-links a {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+.header .logo img,
+.header a.logo img,
+.header .logo a img,
+.suit-header .suit-logo img {
+  filter: brightness(0) invert(1) !important;
+  opacity: 1 !important;
+}
+.header .nav a:hover,
+.suit-header .suit-nav a:hover,
+.footer-nav a:hover,
+.footer-links a:hover {
+  color: #e6d2a6 !important;
+}
+
+/* Dark blue / purple gradient promotional areas */
+.vk-product-band,
+.vk-product-band > *,
+.vk-product-band h1,
+.vk-product-band h2,
+.vk-product-band h3,
+.vk-product-band p,
+.vk-product-band li,
+.vk-product-band span,
+.vk-product-band small,
+.rakubure,
+.rakubure > div,
+.rakubure .eyebrow,
+.rakubure h1,
+.rakubure h2,
+.rakubure h3,
+.rakubure p,
+.rakubure li,
+.rakubure .rakubure-logo-wrap > span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Light product panels and boxes: dark readable typography */
+.rakubure-visual,
+.rakubure-visual > *,
+.rakubure-visual p,
+.rakubure-visual span,
+.rakubure-visual small,
+.rakubure-visual .rakubure-logo-wrap > span {
+  color: #10243f !important;
+  opacity: 1 !important;
+}
+.rakubure-visual {
+  background: #ffffff !important;
+  border: 1px solid rgba(16,36,63,.12) !important;
+}
+.rakubure-visual .rakubure-list span {
+  color: #10243f !important;
+  background: #f1f4f8 !important;
+  border: 1px solid #dce3eb !important;
+}
+.rakubure-visual > p {
+  color: #34465d !important;
+}
+.rakubure-logo-wrap > span {
+  color: #34465d !important;
+}
+
+/* Keep call-to-action labels legible on their own backgrounds */
+.rakubure-actions .btn-gold {
+  background: #d9bd86 !important;
+  color: #10243f !important;
+}
+.rakubure-actions .btn-line {
+  color: #ffffff !important;
+  border-color: #e6d2a6 !important;
+}
+.vk-product-card,
+.vk-product-card h3,
+.vk-product-card p,
+.vk-product-card span {
+  color: #10243f !important;
+}
+
+</style>
+
+<style id="company-commitment-redesign">
+/* Version-K / Our Commitment — editorial premium section */
+html body .company-values.commitment-section {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  padding: clamp(78px, 10vw, 142px) clamp(24px, 8vw, 132px) !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+  text-align: left !important;
+  background:
+    radial-gradient(ellipse at 88% 18%, rgba(54, 76, 133, .42), transparent 38%),
+    linear-gradient(118deg, #0b1b31 0%, #142b49 56%, #1b3155 100%) !important;
+}
+html body .company-values.commitment-section:before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 18px !important;
+  border: 1px solid rgba(213, 184, 126, .24) !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+html body .company-values.commitment-section:after {
+  content: "" !important;
+  position: absolute !important;
+  width: 420px !important;
+  height: 420px !important;
+  right: -145px !important;
+  bottom: -220px !important;
+  border: 1px solid rgba(213,184,126,.22) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 0 42px rgba(213,184,126,.035), 0 0 0 84px rgba(213,184,126,.025) !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+.commitment-inner {
+  position: relative !important;
+  width: min(100%, 1120px) !important;
+  margin: 0 auto !important;
+  z-index: 1 !important;
+}
+.commitment-topline {
+  display: flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+  margin-bottom: clamp(48px, 6vw, 82px) !important;
+}
+.commitment-index {
+  color: #d8bd8b !important;
+  font: 600 11px/1.4 "Cormorant Garamond", serif !important;
+  letter-spacing: .24em !important;
+  white-space: nowrap !important;
+}
+.commitment-rule {
+  display: block !important;
+  width: min(180px, 22vw) !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, #c5a46a, rgba(197,164,106,0)) !important;
+}
+.commitment-number {
+  color: rgba(255,255,255,.5) !important;
+  font: 10px "Manrope", sans-serif !important;
+  letter-spacing: .16em !important;
+}
+.commitment-overline {
+  margin: 0 0 17px !important;
+  color: #d8bd8b !important;
+  font: 600 10px/1.5 "Manrope", sans-serif !important;
+  letter-spacing: .24em !important;
+}
+html body .company-values.commitment-section h2 {
+  position: relative !important;
+  z-index: 2 !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+  font: 600 clamp(35px, 5.1vw, 68px)/1.55 "Noto Serif JP", serif !important;
+  letter-spacing: .045em !important;
+  line-height: 1.55 !important;
+  text-align: left !important;
+}
+html body .company-values.commitment-section h2 span {
+  color: #e0c58f !important;
+}
+html body .company-values.commitment-section .commitment-copy {
+  position: relative !important;
+  z-index: 2 !important;
+  max-width: 760px !important;
+  margin: clamp(25px, 3vw, 38px) 0 0 !important;
+  color: #e6ebf2 !important;
+  font: 400 clamp(13px, 1.15vw, 16px)/2.35 "Noto Serif JP", serif !important;
+  letter-spacing: .045em !important;
+  text-align: left !important;
+}
+.commitment-bottom {
+  display: flex !important;
+  align-items: center !important;
+  gap: 17px !important;
+  margin-top: clamp(42px, 5vw, 66px) !important;
+}
+.commitment-mark {
+  color: #d8bd8b !important;
+  font: 600 10px "Manrope", sans-serif !important;
+  letter-spacing: .2em !important;
+}
+.commitment-bottom-line {
+  width: 52px !important;
+  height: 1px !important;
+  background: rgba(216,189,139,.65) !important;
+}
+.commitment-caption {
+  color: rgba(255,255,255,.56) !important;
+  font: 9px "Manrope", sans-serif !important;
+  letter-spacing: .18em !important;
+}
+.commitment-watermark {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: -100px !important;
+  color: rgba(255,255,255,.035) !important;
+  font: 800 clamp(190px, 27vw, 360px)/1 "Manrope", sans-serif !important;
+  letter-spacing: -.12em !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  z-index: 0 !important;
+}
+@media(max-width:700px) {
+  html body .company-values.commitment-section {
+    padding: 72px 26px 76px !important;
+  }
+  html body .company-values.commitment-section:before {
+    inset: 10px !important;
+  }
+  .commitment-topline {
+    gap: 12px !important;
+    margin-bottom: 48px !important;
+  }
+  .commitment-index { font-size: 10px !important; }
+  .commitment-number { font-size: 8px !important; }
+  .commitment-rule { width: 52px !important; }
+  .commitment-overline { font-size: 9px !important; }
+  html body .company-values.commitment-section h2 {
+    font-size: clamp(29px, 8vw, 39px) !important;
+    line-height: 1.75 !important;
+  }
+  html body .company-values.commitment-section .commitment-copy {
+    font-size: 12px !important;
+    line-height: 2.2 !important;
+    margin-top: 23px !important;
+  }
+  .commitment-break { display: none !important; }
+  .commitment-bottom { margin-top: 42px !important; gap: 12px !important; }
+  .commitment-watermark { right: -15px !important; bottom: -30px !important; }
+}
+</style>
+
+
+<style id="company-commitment-background-hard-fix">
+html body main section.company-values.commitment-section,
+html body section.company-values.commitment-section {
+  display: block !important;
+  background-color: #10243f !important;
+  background-image:
+    radial-gradient(ellipse at 88% 18%, rgba(54,76,133,.42) 0%, rgba(54,76,133,0) 38%),
+    linear-gradient(118deg,#0b1b31 0%,#142b49 56%,#1b3155 100%) !important;
+  background-repeat: no-repeat !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+html body main section.company-values.commitment-section > .commitment-inner {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+html body main section.company-values.commitment-section .commitment-overline,
+html body main section.company-values.commitment-section .commitment-index,
+html body main section.company-values.commitment-section .commitment-mark,
+html body main section.company-values.commitment-section .commitment-number,
+html body main section.company-values.commitment-section .commitment-caption {
+  color: #d8bd8b !important;
+  -webkit-text-fill-color: #d8bd8b !important;
+}
+html body main section.company-values.commitment-section h2,
+html body main section.company-values.commitment-section .commitment-copy {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+html body main section.company-values.commitment-section h2 span {
+  color: #e0c58f !important;
+  -webkit-text-fill-color: #e0c58f !important;
+}
+html body main section.company-values.commitment-section .commitment-watermark {
+  color: rgba(255,255,255,.045) !important;
+  -webkit-text-fill-color: rgba(255,255,255,.045) !important;
+}
+</style>
+
+
+<style id="company-commitment-remove-rectangle-frame">
+html body main section.company-values.commitment-section::before {
+  content: none !important;
+  display: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+</style>
+
+
+<style id="company-commitment-no-frame-final">
+html body main section.company-values.commitment-section,
+html body main section.company-values.commitment-section::before,
+html body main section.company-values.commitment-section::after,
+html body main section.company-values.commitment-section > .commitment-inner,
+html body main section.company-values.commitment-section > .commitment-inner::before,
+html body main section.company-values.commitment-section > .commitment-inner::after {
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+html body main section.company-values.commitment-section::before,
+html body main section.company-values.commitment-section::after,
+html body main section.company-values.commitment-section > .commitment-inner::before,
+html body main section.company-values.commitment-section > .commitment-inner::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+</style>
+
+</head><body>
+<header class="header"><a class="logo" href="index.html" aria-label="Version-K ホーム"><img src="images/version-k-main-logo.png" alt="Version-K"></a>
+<button class="menu-btn" aria-label="メニュー" aria-expanded="false"><i></i><i></i></button>
+<nav class="nav"><a href="index.html">TOP</a><a href="thought.html">想い</a><a href="index.html#business">事業内容</a><a href="company.html">会社概要</a><a href="recruit.html">採用</a><a class="nav-cta" href="contact.html">お問い合わせ ↗</a></nav></header>
+<main>
+<section class="hero company-hero"><div class="hero-bg"></div><div class="hero-inner"><p class="eyebrow">VERSION-K / COMPANY PROFILE</p><h1>人と事業の可能性を、<br><em>次のVersionへ。</em></h1><p class="hero-copy">一人ひとりの想いに向き合い、人・企業・地域をつなぐ。Version-Kの活動と事業をご紹介します。</p></div></section>
+<section class="section company-content"><div class="section-tag">ABOUT US</div><p class="eyebrow dark">OUR PHILOSOPHY</p><h2>人・企業・地域をつなぎ、<br>新しい選択肢を届ける。</h2>
+<p class="company-intro">Version-Kは、仕事・暮らし・地域の課題に向き合い、必要な人や仕組み、機会をつなぐ総合ブランドです。目の前の相手にとって本当に必要なことは何かを考え、企画だけで終わらせず、現場で使われ、続いていく形に整えることを大切にしています。<br>私たちが目指すのは、一方だけが得をする関係ではありません。関わる人、企業、地域にとって価値が循環する「三方四方良し」の実現です。</p>
+<div class="section-tag" style="margin-top:65px">PROFILE</div><h2>運営情報</h2>
+<table class="profile-table"><tbody>
+<tr><th>屋号</th><td>Version-K</td></tr>
+<tr><th>代表</th><td>山﨑 健勝<br><span lang="en">KENTO YAMAZAKI</span></td></tr>
+<tr><th>事業場所</th><td>埼玉県秩父郡東秩父村</td></tr>
+<tr><th>メールアドレス</th><td><a href="mailto:info.versionk@gmail.com">info.versionk@gmail.com</a></td></tr>
+<tr><th>事業内容</th><td>
+<strong>キャリア・人材支援</strong><br>キャリアコーチング、転職・就職支援、採用支援・採用内製化支援<br><br>
+<strong>システム・デジタル支援</strong><br>業務システム開発、AI活用・業務自動化、公式LINE構築・マーケティング<br><br>
+<strong>ハウスクリーニング事業</strong><br>住まいや施設の清掃を通じて、快適で気持ちよく過ごせる環境づくりを支援<br><br>
+<strong>オーダースーツ・独立支援</strong><br>イージーオーダースーツの提案、独立・起業に向けた相談や人・機会の接続<br><br>
+<strong>農業・地域コミュニティ運営</strong><br>「農業コミュニティ 豊 -YUTAKA-」の運営。無農薬栽培を大切にした有機農業、耕作放棄地の再生、農業体験・交流イベントの企画運営<br><br>
+<strong>食育・地域づくり</strong><br>種まきから栽培、収穫、調理、食べる体験を通じて、食べ物が育つ背景や自然の恵み、作り手への感謝を学ぶ食育活動
+</td></tr>
+</tbody></table>
+</section>
+<section class="company-values commitment-section" style="background-color:#10243f !important;background-image:linear-gradient(118deg,#0b1b31 0%,#142b49 56%,#1b3155 100%) !important;color:#ffffff !important;">
+  <div class="commitment-inner">
+    <div class="commitment-topline">
+      <span class="commitment-index">OUR COMMITMENT</span>
+      <span class="commitment-rule"></span>
+      <span class="commitment-number">01 — 03</span>
+    </div>
+    <p class="commitment-overline">WHAT WE BELIEVE IN</p>
+    <h2>想いを、行動に。<br><span>行動を、価値に。</span></h2>
+    <p class="commitment-copy">目の前の一人の声を聞き、現場を知り、必要な仕組みをつくる。<br class="commitment-break">
+    人と人、人と企業、都市と地域をつなぎながら、<br class="commitment-break">
+    誰かの次の一歩を支える存在でありたい。</p>
+    <div class="commitment-bottom">
+      <span class="commitment-mark">VERSION-K</span>
+      <span class="commitment-bottom-line"></span>
+      <span class="commitment-caption">CREATE VALUE, TOGETHER.</span>
+    </div>
+    <span class="commitment-watermark" aria-hidden="true">VK</span>
+  </div>
+</section>
+<section class="section company-content company-business">
+<div class="section-tag">OUR BUSINESS</div>
+<p class="eyebrow dark">BUSINESS & ACTIVITIES</p>
+<h2>人・企業・地域の可能性を、<br>6つの事業で支える。</h2>
+<p class="company-intro">それぞれの分野で現場の課題に向き合い、必要なサービスや仕組みを届けています。各事業の専門性を活かしながら、人と人、企業と地域をつなぎ、新しい選択肢を生み出します。</p>
+<div class="business-cards">
+<article class="business-card">
+  <img src="images/business-career.png" alt="キャリア・人材支援のイメージ">
+  <div class="business-card-copy"><span>01 / CAREER & PEOPLE</span><h3>キャリア・人材支援</h3><p>キャリアコーチング、転職・就職支援、採用支援・採用内製化支援を通じて、個人の次の一歩と企業の採用課題をサポートします。</p></div>
+</article>
+<article class="business-card">
+  <img src="images/business-system.png" alt="システム・デジタル支援のイメージ">
+  <div class="business-card-copy"><span>02 / DIGITAL & SYSTEM</span><h3>システム・デジタル支援</h3><p>業務システム開発、AI活用・業務自動化、公式LINE構築・マーケティングで、現場の業務改善と事業の成長を支援します。</p></div>
+</article>
+<article class="business-card">
+  <img src="images/business-cleaning.png" alt="ハウスクリーニングのイメージ">
+  <div class="business-card-copy"><span>03 / HOUSE CLEANING</span><h3>ハウスクリーニング事業</h3><p>住まいや施設を清潔に整え、安心して気持ちよく過ごせる空間づくりをお手伝いします。</p></div>
+</article>
+<article class="business-card">
+  <img src="images/suit-fabric-versionk.jpg" alt="Version-Kのオーダースーツ生地">
+  <div class="business-card-copy"><span>04 / ORDER SUIT & INDEPENDENCE</span><h3>オーダースーツ・独立支援</h3><p>イージーオーダースーツをご提案。独立・起業に向けた相談や、人・機会との接点づくりもサポートします。</p></div>
+</article>
+<article class="business-card">
+  <img src="images/yutaka-ricefield.jpg" alt="農業コミュニティ豊の田園風景">
+  <div class="business-card-copy"><span>05 / AGRICULTURE & COMMUNITY</span><h3>農業・地域コミュニティ運営</h3><p>「農業コミュニティ 豊 -YUTAKA-」を運営。無農薬栽培を大切にした有機農業、耕作放棄地の再生、農業体験・交流イベントを企画・運営します。</p></div>
+</article>
+<article class="business-card">
+  <img src="images/yutaka-community-lunch.jpg" alt="農業コミュニティの食育・交流活動">
+  <div class="business-card-copy"><span>06 / FOOD EDUCATION</span><h3>食育・地域づくり</h3><p>種まきから栽培、収穫、調理、食べる体験を通じて、食べ物が育つ背景や自然の恵み、作り手への感謝を学ぶ機会をつくります。</p></div>
+</article>
+</div>
+</section>
+
+<section class="company-contact"><p class="eyebrow">GET IN TOUCH</p><h2>事業・協業に関するご相談</h2><p>サービスについてのご質問、協業・パートナーシップのご相談など、お気軽にお問い合わせください。</p><a class="btn" href="contact.html">お問い合わせ ↗</a></section>
+</main>
+<footer class="footer"><a class="logo" href="index.html" aria-label="Version-K ホーム"><img src="images/version-k-main-logo.png" alt="Version-K"></a><p>YOUR NEXT VERSION STARTS HERE.</p><nav class="footer-nav"><a href="index.html">TOP</a><a href="thought.html">想い</a><a href="index.html#business">事業内容</a><a href="company.html">会社概要</a><a href="recruit.html">採用</a><a href="contact.html">お問い合わせ</a></nav><div class="footer-bottom"><span>© <span id="year"></span> Version-K. All Rights Reserved.</span><a href="#">BACK TO TOP ↑</a></div></footer><script src="script.js"></script><script src="modern-motion.js"></script><script src="vk-motion.js" defer></script>
+</body></html>

@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="住まいに向き合い、暮らす人に向き合う。誠実で丁寧なハウスクリーニング。水まわりを中心に、一つひとつの現場に心を込めて対応します。">
+<meta name="theme-color" content="#101f35">
+<title>ハウスクリーニング | Version-K</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.clean-page{--navy:#142238;--navy2:#20344e;--gold:#c5a66b;--gold-light:#e6d5ad;--ink:#253448;--muted:#687586;--paper:#f5f6f7;background:var(--paper);color:var(--ink)}
+.clean-page .hero{min-height:720px;background:#142238;position:relative;overflow:hidden}
+.clean-page .hero-bg{background-image:url('images/cleaning-new-kitchen.jpg');background-size:cover;background-position:center 54%;opacity:.58}
+.clean-page .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,25,44,.94) 0%,rgba(15,32,53,.78) 48%,rgba(15,32,53,.24) 100%),linear-gradient(0deg,rgba(12,27,46,.35),transparent 55%)}
+.clean-page .hero-inner{position:relative;z-index:1;max-width:900px;padding-top:115px;padding-bottom:100px}
+.clean-page .eyebrow{font:11px "Playfair Display",serif;letter-spacing:4px;color:var(--gold-light)}
+.clean-page .hero h1{font-family:"Noto Serif JP",serif;font-size:clamp(34px,5vw,60px);font-weight:500;letter-spacing:.12em;line-height:1.7;color:#fff;margin:24px 0}
+.clean-page .hero h1 em{font-style:normal;color:var(--gold-light)}
+.clean-page .hero-copy{max-width:610px;color:#e7ebef;font-size:14px;line-height:2.5;letter-spacing:.06em}
+.clean-page .hero .btn{margin-top:25px;background:var(--gold);border:1px solid var(--gold);color:#15243a;letter-spacing:.1em}
+.clean-page .section{padding-top:100px;padding-bottom:100px}
+.clean-page .section-tag{font:11px "Playfair Display",serif;letter-spacing:3px;color:#a1824b;margin-bottom:28px}
+.clean-page .eyebrow.dark{color:#a1824b}
+.clean-page h2{font-family:"Noto Serif JP",serif;font-weight:500;letter-spacing:.08em;line-height:1.8;color:var(--navy)}
+.clean-page .lead{color:var(--muted);font-size:14px;line-height:2.5;letter-spacing:.035em}
+.clean-story{display:grid;grid-template-columns:1.02fr .98fr;gap:8%;align-items:center}
+.clean-story h2{font-size:clamp(25px,3vw,38px)}
+.clean-story .story-image{width:100%;height:470px;object-fit:cover}
+.clean-quote{background:var(--navy);color:#fff;text-align:center;padding:100px 8%;position:relative}
+.clean-quote .en{font:12px "Playfair Display",serif;letter-spacing:4px;color:var(--gold-light)}
+.clean-quote h2{font-size:clamp(26px,4vw,43px);color:#fff;line-height:1.95;margin:22px auto;max-width:900px}
+.clean-quote p{font-size:13px;line-height:2.5;color:#d8e0e8;max-width:760px;margin:auto}
+.clean-quote:before,.clean-quote:after{content:"";display:block;width:52px;height:1px;background:var(--gold);margin:0 auto 26px}
+.clean-quote:after{margin:26px auto 0}
+.clean-values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.clean-value{background:#fff;border:1px solid #e1e5e9;border-top:2px solid var(--gold);padding:30px 26px}
+.clean-value .num{font:12px "Playfair Display",serif;color:#a1824b;letter-spacing:2px}
+.clean-value h3{font-family:"Noto Serif JP",serif;font-size:18px;font-weight:500;color:var(--navy);margin:12px 0}
+.clean-value p{font-size:12px;line-height:2.25;color:#697789;margin:0}
+.clean-promise{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#dce1e6;border:1px solid #dce1e6;margin-top:38px}
+.clean-promise article{background:#fff;padding:27px 30px}
+.clean-promise b{font:12px "Playfair Display",serif;color:#a1824b;letter-spacing:2px}
+.clean-promise h3{font-family:"Noto Serif JP",serif;font-size:17px;font-weight:500;color:var(--navy);margin:8px 0}
+.clean-promise p{font-size:12px;color:#697789;line-height:2.1;margin:0}
+.clean-services{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}
+.clean-service{background:#fff;padding:25px 20px;border:1px solid #e1e5e9}
+.clean-service span{font:12px "Playfair Display",serif;color:#a1824b;letter-spacing:2px}
+.clean-service h3{font-family:"Noto Serif JP",serif;font-size:16px;font-weight:500;color:var(--navy);margin:12px 0}
+.clean-service p{font-size:11px;line-height:2;color:#697789;margin:0}
+.clean-gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:38px}
+.clean-gallery figure{margin:0;background:#fff;overflow:hidden}
+.clean-gallery img{display:block;width:100%;height:100%;min-height:220px;object-fit:cover;transition:transform .5s}
+.clean-gallery figure:hover img{transform:scale(1.035)}
+.clean-gallery figure:nth-child(1){grid-column:span 7;grid-row:span 2}
+.clean-gallery figure:nth-child(2){grid-column:span 5}
+.clean-gallery figure:nth-child(3),.clean-gallery figure:nth-child(4){grid-column:span 6}
+.clean-gallery figure:nth-child(n+5){grid-column:span 4}
+.clean-gallery figcaption{padding:11px 13px;font-size:11px;color:#637184;letter-spacing:.04em}
+.clean-cta{background:#101e31;color:#fff;text-align:center;padding:90px 8%;border-top:1px solid var(--gold)}
+.clean-cta .eyebrow{color:var(--gold-light)}
+.clean-cta h2{color:#fff;font-size:clamp(25px,3vw,36px)}
+.clean-cta p{color:#d5dde6;font-size:13px;line-height:2.3}
+.clean-cta .btn{background:var(--gold);color:#142238;border:1px solid var(--gold)}
+@media(max-width:700px){
+ .clean-page .hero{min-height:620px}
+ .clean-page .hero-bg{background-position:55% center}
+ .clean-page .hero-inner{padding-top:85px}
+ .clean-page .hero h1{font-size:34px}
+ .clean-page .section{padding-top:72px;padding-bottom:72px}
+ .clean-story{grid-template-columns:1fr;gap:28px}
+ .clean-story .story-image{height:300px}
+ .clean-values{grid-template-columns:1fr}
+ .clean-promise{grid-template-columns:1fr}
+ .clean-services{grid-template-columns:1fr 1fr}
+ .clean-gallery{grid-template-columns:repeat(2,1fr)}
+ .clean-gallery figure:nth-child(n){grid-column:span 1;grid-row:auto}
+ .clean-gallery figure:first-child{grid-column:span 2}
+ .clean-gallery img{min-height:170px}
+}
+</style>
+<link rel="stylesheet" href="premium-final.css">
+<link rel="stylesheet" href="modern-luxury.css">
+<link rel="stylesheet" href="site-reset.css">
+<link rel="stylesheet" href="modern-editorial.css">\n<link rel="stylesheet" href="vk-modern-system.css">
+
+<style>
+
+/* =========================================================
+   VERSION-K / FINAL CONTRAST FIX
+   Header logo + navigation: white on dark navy.
+   Dark promotional bands: white copy.
+   Light cards/boxes: deep navy copy.
+   ========================================================= */
+.header .logo,
+.header .logo a,
+.header .nav,
+.header .nav a,
+.header .nav a *,
+.suit-header .suit-logo,
+.suit-header .suit-nav,
+.suit-header .suit-nav a,
+.footer-nav a,
+.footer-links a {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+.header .logo img,
+.header a.logo img,
+.header .logo a img,
+.suit-header .suit-logo img {
+  filter: brightness(0) invert(1) !important;
+  opacity: 1 !important;
+}
+.header .nav a:hover,
+.suit-header .suit-nav a:hover,
+.footer-nav a:hover,
+.footer-links a:hover {
+  color: #e6d2a6 !important;
+}
+
+/* Dark blue / purple gradient promotional areas */
+.vk-product-band,
+.vk-product-band > *,
+.vk-product-band h1,
+.vk-product-band h2,
+.vk-product-band h3,
+.vk-product-band p,
+.vk-product-band li,
+.vk-product-band span,
+.vk-product-band small,
+.rakubure,
+.rakubure > div,
+.rakubure .eyebrow,
+.rakubure h1,
+.rakubure h2,
+.rakubure h3,
+.rakubure p,
+.rakubure li,
+.rakubure .rakubure-logo-wrap > span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Light product panels and boxes: dark readable typography */
+.rakubure-visual,
+.rakubure-visual > *,
+.rakubure-visual p,
+.rakubure-visual span,
+.rakubure-visual small,
+.rakubure-visual .rakubure-logo-wrap > span {
+  color: #10243f !important;
+  opacity: 1 !important;
+}
+.rakubure-visual {
+  background: #ffffff !important;
+  border: 1px solid rgba(16,36,63,.12) !important;
+}
+.rakubure-visual .rakubure-list span {
+  color: #10243f !important;
+  background: #f1f4f8 !important;
+  border: 1px solid #dce3eb !important;
+}
+.rakubure-visual > p {
+  color: #34465d !important;
+}
+.rakubure-logo-wrap > span {
+  color: #34465d !important;
+}
+
+/* Keep call-to-action labels legible on their own backgrounds */
+.rakubure-actions .btn-gold {
+  background: #d9bd86 !important;
+  color: #10243f !important;
+}
+.rakubure-actions .btn-line {
+  color: #ffffff !important;
+  border-color: #e6d2a6 !important;
+}
+.vk-product-card,
+.vk-product-card h3,
+.vk-product-card p,
+.vk-product-card span {
+  color: #10243f !important;
+}
+
+</style>
+</head>
+<body>
+<header class="header">
+<a class="logo" href="index.html" aria-label="Version-K ホーム"><img src="images/version-k-main-logo.png" alt="Version-K"></a>
+<button class="menu-btn" aria-label="メニュー" aria-expanded="false"><i></i><i></i></button>
+<nav class="nav">
+<a href="index.html">TOP</a><a href="thought.html">想い</a><a href="index.html#business">事業内容</a>
+<a href="company.html">会社概要</a><a href="recruit.html">採用</a><a class="nav-cta" href="contact.html">お問い合わせ ↗</a>
+</nav>
+</header>
+<main class="clean-page">
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-inner">
+<p class="eyebrow">HOUSE CLEANING / VERSION-K</p>
+<h1>きれいにするのは、<br><em>空間だけじゃない。</em></h1>
+<p class="hero-copy">目の前の汚れに向き合い、その先にいる人の暮らしに向き合う。<br>一つひとつの現場に誠実に。清潔で、安心できる毎日を支えます。</p>
+<a class="btn" href="#philosophy">私たちの清掃への想い ↓</a>
+</div>
+</section>
+
+<section class="clean-quote" id="philosophy">
+<div class="en">OUR PHILOSOPHY</div>
+<h2>清掃は、ただ汚れを落とす仕事じゃない。<br>誰かの毎日を、気持ちよくする仕事だ。</h2>
+<p>家は、毎日を過ごす場所。疲れて帰ってくる場所であり、家族と笑い合う場所であり、自分らしくいられる場所。<br>だからこそ、きれいにすることには意味がある。<br>目に見える汚れだけでなく、そこに暮らす人の気持ちまで少し軽くなるように。私たちは、目の前の仕事に誠実に向き合います。</p>
+</section>
+
+<section class="section reveal">
+<div class="section-tag">01 / THE REASON</div>
+<div class="clean-story">
+<div>
+<p class="eyebrow dark">BEHIND EVERY CLEAN SPACE</p>
+<h2>人の役に立つことを、<br>目の前の仕事から。</h2>
+<p class="lead">私たちが大切にしているのは、作業を終わらせることだけではありません。ご依頼くださった方の困りごとを受け止め、何を求めているのかをきちんと理解し、できることを丁寧に積み重ねることです。</p>
+<p class="lead">清掃の仕事は、派手ではないかもしれません。でも、きれいになった場所には、安心や心地よさが生まれる。その変化を届けられることに、仕事の価値があると考えています。</p>
+<p class="lead">一度のご依頼で終わる関係ではなく、「またお願いしたい」と思っていただける信頼を築く。誠実さと親しみを忘れず、人と人とのつながりを大切にします。</p>
+</div>
+<img class="story-image" src="images/cleaning-new-vanity.jpg" alt="洗面台まわりの清掃・施工風景">
+</div>
+</section>
+
+<section class="section" style="background:#e9edf1">
+<div class="section-tag">02 / OUR VALUES</div>
+<p class="eyebrow dark">WHAT WE BELIEVE</p>
+<h2>清掃の仕事で、大切にしている3つのこと。</h2>
+<div class="clean-values">
+<article class="clean-value"><span class="num">01 / SINCERITY</span><h3>誠実に、丁寧に。</h3><p>見えにくい場所や細かな部分にも目を配り、一つひとつの作業に責任を持つ。できること・できないことも誠実にお伝えします。</p></article>
+<article class="clean-value"><span class="num">02 / RESPECT</span><h3>相手の立場で考える。</h3><p>住まい方も、お困りごとも人それぞれ。決めつけずに話を聞き、ご希望や状況に合わせた対応を大切にします。</p></article>
+<article class="clean-value"><span class="num">03 / TRUST</span><h3>人とのつながりを大切に。</h3><p>清掃を通じて生まれるご縁に感謝し、安心して任せてもらえる関係を築く。関わる人みんなにとって良い仕事を目指します。</p></article>
+</div>
+</section>
+
+<section class="section">
+<div class="section-tag">03 / OUR PROMISE</div>
+<p class="eyebrow dark">HOW WE WORK</p>
+<h2>当たり前のことを、当たり前以上に。</h2>
+<div class="clean-promise">
+<article><b>01 / LISTEN</b><h3>まず、ご要望を聞く。</h3><p>気になる場所やご希望、現場の状況を事前に確認。認識のずれがないよう、丁寧なコミュニケーションを心がけます。</p></article>
+<article><b>02 / EXPLAIN</b><h3>作業内容をわかりやすく。</h3><p>作業範囲や進め方を確認し、必要なことを事前にご説明。ご納得いただいたうえで進めます。</p></article>
+<article><b>03 / CARE</b><h3>住まいを大切に扱う。</h3><p>設備や素材の状態に配慮し、周囲を汚したり傷つけたりしないよう注意を払って作業します。</p></article>
+<article><b>04 / FOLLOW</b><h3>最後まで責任を持つ。</h3><p>作業後の状態を確認し、気になる点がないかを共有。安心していただける対応を大切にします。</p></article>
+</div>
+</section>
+
+<section class="section" style="background:#e9edf1">
+<div class="section-tag">04 / SERVICE</div>
+<p class="eyebrow dark">CLEANING MENU</p>
+<h2>暮らしの中の、気になる場所に。</h2>
+<p class="lead">水まわりを中心に、住まいの清掃についてご相談を承ります。現場の状態や設備、素材、ご希望を確認したうえで、対応内容をご案内します。</p>
+<div class="clean-services">
+<article class="clean-service"><span>01 / KITCHEN</span><h3>キッチン・シンク</h3><p>シンクや水栓まわりなど、毎日使う場所を清潔に整えます。</p></article>
+<article class="clean-service"><span>02 / WASHROOM</span><h3>洗面台</h3><p>洗面ボウルや水栓、鏡まわりなどの清掃をご相談いただけます。</p></article>
+<article class="clean-service"><span>03 / BATHROOM</span><h3>浴室</h3><p>浴槽・床・水栓・壁面など、状態に応じて対応内容をご案内します。</p></article>
+<article class="clean-service"><span>04 / TOILET</span><h3>トイレ</h3><p>便器や便座、周辺設備など、気になる箇所を確認して作業します。</p></article>
+</div>
+</section>
+
+<section class="section">
+<div class="section-tag">05 / WORKS</div>
+<p class="eyebrow dark">DETAILS MATTER</p>
+<h2>一つひとつの現場に、丁寧な仕事を。</h2>
+<p class="lead">実際の現場で撮影した写真をご紹介します。設備の状態や作業箇所をご確認ください。</p>
+<div class="clean-gallery">
+<figure><img src="images/cleaning-new-kitchen.jpg" alt="ステンレスシンクの施工風景" loading="lazy"><figcaption>キッチン・ステンレスシンク</figcaption></figure>
+<figure><img src="images/cleaning-new-faucet.jpg" alt="水栓金具の施工風景" loading="lazy"><figcaption>水栓金具まわり</figcaption></figure>
+<figure><img src="images/cleaning-new-vanity.jpg" alt="洗面化粧台の施工風景" loading="lazy"><figcaption>洗面化粧台</figcaption></figure>
+<figure><img src="images/cleaning-new-basin.jpg" alt="洗面ボウルの施工風景" loading="lazy"><figcaption>洗面ボウル・排水口</figcaption></figure>
+<figure><img src="images/cleaning-new-toilet.jpg" alt="トイレ設備の施工風景" loading="lazy"><figcaption>トイレ設備</figcaption></figure>
+<figure><img src="images/cleaning-new-bath-detail.jpg" alt="浴室水栓の施工風景" loading="lazy"><figcaption>浴室水栓・壁面</figcaption></figure>
+<figure><img src="images/cleaning-new-bathroom.jpg" alt="浴室全体の施工風景" loading="lazy"><figcaption>浴室全体</figcaption></figure>
+<figure><img src="images/cleaning-new-storage.jpg" alt="洗面台収納の施工風景" loading="lazy"><figcaption>洗面台収納</figcaption></figure>
+<figure><img src="images/cleaning-new-mirror.jpg" alt="洗面鏡の施工風景" loading="lazy"><figcaption>洗面鏡・照明まわり</figcaption></figure>
+<figure><img src="images/cleaning-new-sash.jpg" alt="窓サッシの施工風景" loading="lazy"><figcaption>窓サッシ・建具まわり</figcaption></figure>
+</div>
+</section>
+
+<section class="clean-cta">
+<p class="eyebrow">CONTACT / HOUSE CLEANING</p>
+<h2>きれいな空間から、心地よい毎日へ。</h2>
+<p>「ここをきれいにしたい」「どこまで頼める？」<br>そんな小さなご相談から、お気軽にお問い合わせください。</p>
+<a class="btn" href="contact.html?subject=ハウスクリーニングについて">清掃について相談する ↗</a>
+</section>
+</main>
+<footer class="footer">
+<a class="logo" href="index.html" aria-label="Version-K ホーム"><img src="images/version-k-main-logo.png" alt="Version-K"></a><p>YOUR NEXT VERSION STARTS HERE.</p>
+<nav class="footer-nav"><a href="index.html">TOP</a><a href="thought.html">想い</a><a href="index.html#business">事業内容</a><a href="company.html">会社概要</a><a href="recruit.html">採用</a><a href="contact.html">お問い合わせ</a></nav>
+<div class="footer-bottom"><span>© <span id="year"></span> Version-K. All Rights Reserved.</span><a href="#">BACK TO TOP ↑</a></div>
+</footer>
+<script src="script.js"></script>
+<script src="modern-motion.js"></script><script src="vk-motion.js" defer></script>
+</body>
+</html>

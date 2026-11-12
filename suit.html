@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="一着に、あなたの想いを。Version-Kのイージーオーダースーツと独立・起業を目指す方への伴走支援。">
+<meta name="theme-color" content="#101f35">
+<title>ORDER SUIT & INDEPENDENCE | Version-K</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+:root{--ink:#101f35;--ink2:#1b2d47;--gold:#c5a46a;--champagne:#e6d2a6;--paper:#f7f5ef;--muted:#697586}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:"Noto Serif JP",serif;font-weight:300}
+a{color:inherit;text-decoration:none}
+.suit-header{height:82px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;position:absolute;z-index:10;top:0;left:0;width:100%;border-bottom:1px solid rgba(255,255,255,.16)}
+.suit-logo{display:inline-flex;align-items:center}.suit-logo img{display:block;width:174px;height:auto;filter:brightness(0) invert(1)!important;}
+.suit-nav{display:flex;align-items:center;gap:30px;font-size:10px;letter-spacing:.13em;color:#e7e3da}
+.suit-nav a:hover{color:var(--champagne)}
+.suit-nav .nav-contact{border:1px solid var(--gold);padding:12px 18px}
+.lux-hero{min-height:790px;position:relative;display:flex;align-items:center;overflow:hidden;background:#101f35}
+.lux-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,15,14,.91) 0%,rgba(12,15,14,.72) 43%,rgba(12,15,14,.12) 100%);z-index:1}
+.lux-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,15,14,.7),transparent 40%);z-index:1}
+.hero-photo{position:absolute;inset:0;background:url("images/suit-hero-new.jpg") center 48%/cover no-repeat;opacity:.88}
+.hero-content{position:relative;z-index:2;width:min(1100px,86%);margin:95px auto 30px}
+.kicker{font:11px "Playfair Display",serif;letter-spacing:.28em;color:var(--champagne);text-transform:uppercase}
+.hero-content h1{font-size:clamp(38px,6vw,76px);font-weight:300;line-height:1.55;letter-spacing:.12em;margin:32px 0 22px}
+.hero-content h1 em{font-style:normal;color:var(--champagne)}
+.hero-content p{font-size:13px;line-height:2.4;color:#e0dfd8;letter-spacing:.05em}
+.hero-line{width:70px;height:1px;background:var(--gold);margin:35px 0}
+.gold-link{display:inline-flex;gap:25px;align-items:center;border-bottom:1px solid var(--gold);padding:0 0 13px;font-size:11px;letter-spacing:.12em;margin-top:20px}
+.gold-link span{color:var(--champagne);font-size:18px}
+.hero-index{position:absolute;z-index:2;right:7%;bottom:55px;font:12px "Playfair Display",serif;letter-spacing:.2em;color:#d4c6a9}
+.lux-section{padding:120px 8%;background:var(--paper);color:var(--ink)}
+.lux-inner{max-width:1120px;margin:auto}
+.section-head{display:flex;align-items:flex-start;gap:30px;margin-bottom:54px}
+.section-no{font:13px "Playfair Display",serif;color:#9b835f;letter-spacing:.15em;padding-top:8px;white-space:nowrap}
+.section-head h2{font-size:clamp(27px,3.4vw,44px);font-weight:300;line-height:1.7;letter-spacing:.08em;margin:0}
+.section-head h2 small{display:block;font:11px "Playfair Display",serif;color:#9b835f;letter-spacing:.22em;margin-bottom:12px}
+.philosophy{background:#1b2d47;color:#f3f0e9;text-align:center;padding:125px 8%}
+.philosophy .kicker{margin-bottom:27px}
+.philosophy h2{font-size:clamp(27px,4vw,46px);font-weight:300;letter-spacing:.12em;line-height:1.7;margin:0}
+.philosophy p{max-width:780px;margin:32px auto 0;color:#c5c6be;font-size:12px;line-height:2.8;letter-spacing:.04em}
+.suit-intro{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}
+.suit-intro img{width:100%;height:570px;object-fit:cover;object-position:center 30%}
+.intro-copy .kicker{color:#9b835f}
+.intro-copy h3{font-size:31px;font-weight:300;line-height:1.8;letter-spacing:.08em;margin:22px 0}
+.intro-copy p{font-size:12px;line-height:2.6;color:#66685f}
+.feature-row{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:70px}
+.feature{border-top:1px solid #c9c2b4;padding-top:20px}
+.feature b{font:12px "Playfair Display",serif;color:#9b835f;letter-spacing:.18em}
+.feature h4{font-size:15px;font-weight:400;letter-spacing:.08em;margin:13px 0}
+.feature p{font-size:11px;line-height:2.2;color:#77786f}
+.gallery-section{background:#101f35;color:var(--paper);padding:115px 8%}
+.gallery-section .section-head h2{color:var(--paper)}
+.gallery-section .section-no{color:var(--champagne)}
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.gallery-grid figure{margin:0;overflow:hidden;position:relative;background:#252a26}
+.gallery-grid figure:nth-child(1){grid-column:span 5;grid-row:span 2}
+.gallery-grid figure:nth-child(2){grid-column:span 3}
+.gallery-grid figure:nth-child(3){grid-column:span 4}
+.gallery-grid figure:nth-child(4){grid-column:span 4}
+.gallery-grid figure:nth-child(5){grid-column:span 4}
+.gallery-grid figure:nth-child(6){grid-column:span 4}
+.gallery-grid figure:nth-child(7){grid-column:span 6}
+.gallery-grid figure:nth-child(8){grid-column:span 6}
+.gallery-grid img{width:100%;height:100%;min-height:220px;max-height:390px;object-fit:cover;display:block;transition:transform .7s;filter:saturate(.82)}
+.gallery-grid figure:first-child img{min-height:510px}
+.gallery-grid figure:hover img{transform:scale(1.035)}
+.gallery-grid figcaption{position:absolute;bottom:0;left:0;right:0;padding:25px 15px 13px;background:linear-gradient(transparent,rgba(0,0,0,.7));font-size:10px;letter-spacing:.12em;color:#eee}
+.independence{background:#eeece5}
+.independence .suit-intro img{height:560px;object-position:center 25%}
+.independence .intro-copy h3{font-size:clamp(27px,3.3vw,40px)}
+.independence .intro-copy p{color:#64665f}
+.support-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:55px}
+.flow-card{background:#f4f1ea;padding:28px 24px;min-height:175px;border:1px solid #d8d0c1}
+.flow-card span{font:12px "Playfair Display",serif;color:#9b835f;letter-spacing:.18em}
+.flow-card h4{font-weight:400;font-size:15px;margin:15px 0 9px}
+.flow-card p{font-size:11px;line-height:2;color:#77786f;margin:0}
+.promise{background:#1b2d47;text-align:center;padding:115px 8%}
+.promise h2{font-size:clamp(26px,4vw,43px);font-weight:300;line-height:1.8;letter-spacing:.1em}
+.promise p{max-width:720px;margin:25px auto;color:#c5c6be;font-size:12px;line-height:2.6}
+.contact-panel{background:#c8b99d;color:#1b211d;text-align:center;padding:90px 7%}
+.contact-panel .kicker{color:#63543e}
+.contact-panel h2{font-size:clamp(25px,3.5vw,40px);font-weight:300;letter-spacing:.1em;line-height:1.7}
+.contact-panel p{font-size:12px;line-height:2.3}
+.contact-button{display:inline-block;border:1px solid #252a25;padding:17px 35px;margin-top:25px;font-size:11px;letter-spacing:.15em;transition:.3s}
+.contact-button:hover{background:#252a25;color:#f3f0e9}
+.suit-footer{background:#121513;padding:45px 8% 25px;color:#aaa99f}
+.footer-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #343a35;padding-bottom:28px}
+.footer-top .suit-logo{color:#f3f0e9}
+.footer-links{display:flex;gap:22px;font-size:10px;letter-spacing:.1em}
+.footer-bottom{display:flex;justify-content:space-between;padding-top:22px;font-size:9px;letter-spacing:.1em}
+.suit-note{font-size:10px;line-height:2;color:#77786f;margin-top:30px}
+@media(max-width:760px){
+ .suit-header{height:68px;padding:0 6%}.suit-nav{gap:12px;font-size:9px}.suit-nav a:not(.nav-contact){display:none}
+ .lux-hero{min-height:690px}.hero-photo{background-position:58% center}.hero-content{width:86%;margin-top:80px}
+ .hero-content h1{font-size:39px}.hero-content p{font-size:11px}
+ .lux-section,.gallery-section{padding:80px 7%}.section-head{gap:17px;margin-bottom:35px}
+ .suit-intro{grid-template-columns:1fr;gap:30px}.suit-intro img,.independence .suit-intro img{height:430px;order:0}
+ .intro-copy{order:1}.feature-row,.support-flow{grid-template-columns:1fr;gap:22px}
+ .gallery-grid{grid-template-columns:1fr 1fr}.gallery-grid figure:nth-child(n){grid-column:span 1;grid-row:auto}
+ .gallery-grid figure:first-child{grid-column:span 2}.gallery-grid figure:first-child img{min-height:340px}
+ .gallery-grid figure:nth-child(n){grid-column:span 1}.gallery-grid figure:first-child{grid-column:span 2}
+ .gallery-grid img{min-height:190px;height:230px}
+ .philosophy,.promise{padding:85px 7%}
+ .footer-top,.footer-bottom{display:block}.footer-links{flex-wrap:wrap;margin-top:20px}
+}
+
+body,.suit-page,.suit-page *{font-family:'Noto Serif JP',serif!important}
+.suit-logo img{filter:none!important}
+.suit-nav,.suit-nav a{font-family:'Cormorant Garamond','Noto Serif JP',serif!important}
+.kicker,.hero-index,.section-no,.gold-link{font-family:'Cormorant Garamond','Noto Serif JP',serif!important}
+
+/* Version-K unified navy & gold / contrast correction */
+:root{--ink:#101f35;--ink2:#1b2d47;--gold:#b18a4c;--champagne:#e6d2a6;--paper:#f7f5ef;--muted:#465468}
+body{background:#101f35;color:#f7f5ef}
+.lux-section,.independence{background:#f7f5ef!important;color:#14243a!important}
+.lux-section h2,.lux-section h3,.lux-section h4,
+.independence h2,.independence h3,.independence h4{color:#14243a!important}
+.lux-section p,.lux-section li,.independence p,.support-flow p,
+.feature p,.intro-copy p,.suit-note{color:#465468!important}
+.lux-section .kicker,.section-no,.section-head h2 small,
+.intro-copy .kicker,.feature b,.flow-card span{color:#76551f!important}
+.philosophy,.promise{background:#101f35!important;color:#fff!important}
+.philosophy h2,.promise h2{color:#fff!important}
+.philosophy p,.promise p{color:#e3e8ef!important}
+.philosophy .kicker,.promise .kicker{color:#e6d2a6!important}
+.feature,.flow-card{border-color:#c5a46a!important;background:#fff}
+.feature h4,.flow-card h4{color:#14243a!important}
+.support-flow{background:#f7f5ef}
+.suit-note{background:#f0ede5;border-left:2px solid #b18a4c;padding:16px 20px}
+.contact-panel{background:#1b2d47!important;color:#fff!important}
+.contact-panel h2{color:#fff!important}
+.contact-panel p{color:#e3e8ef!important}
+.contact-panel .kicker{color:#e6d2a6!important}
+.suit-footer{background:#0b1728!important;color:#fff!important}
+.suit-footer a,.suit-footer span{color:#e5eaf0!important}
+.suit-footer .footer-bottom{border-color:rgba(230,210,166,.35)!important}
+.suit-footer .suit-logo img{filter:brightness(0) invert(1)!important;}
+
+
+/* Premium tailoring finish: gold wordmark and warm beige surfaces */
+:root{
+  --paper:#F1E9DC;
+  --suit-beige:#F1E9DC;
+  --suit-beige-deep:#E8DECE;
+  --suit-gold:#C5A46A;
+  --suit-gold-light:#E6D2A6;
+}
+/* Logo: metallic champagne-gold on the navy header/footer */
+.suit-header .suit-logo img,
+.suit-footer .suit-logo img{
+  filter:brightness(0) saturate(100%) invert(73%) sepia(22%) saturate(620%) hue-rotate(4deg) brightness(92%) contrast(88%)!important;
+  opacity:1!important;
+}
+/* Replace pure white / cool-white panels with warm beige */
+.lux-section,.independence,.support-flow{
+  background-color:var(--suit-beige)!important;
+}
+.feature,.flow-card{
+  background:var(--suit-beige-deep)!important;
+  border-color:rgba(177,138,76,.55)!important;
+}
+.suit-note{
+  background:#E8DECE!important;
+}
+.gallery-section{
+  background:#101f35!important;
+}
+/* Refined gold details and restrained borders */
+.section-no,.section-head h2 small,.intro-copy .kicker,
+.feature b,.flow-card span{
+  color:#8A672F!important;
+}
+.feature,.flow-card{
+  box-shadow:0 8px 24px rgba(16,31,53,.045);
+}
+
+</style>
+<link rel="stylesheet" href="premium-final.css">
+<link rel="stylesheet" href="modern-luxury.css">
+<link rel="stylesheet" href="site-reset.css">
+<link rel="stylesheet" href="modern-editorial.css">\n<link rel="stylesheet" href="vk-modern-system.css">
+
+<style>
+
+/* =========================================================
+   VERSION-K / FINAL CONTRAST FIX
+   Header logo + navigation: white on dark navy.
+   Dark promotional bands: white copy.
+   Light cards/boxes: deep navy copy.
+   ========================================================= */
+.header .logo,
+.header .logo a,
+.header .nav,
+.header .nav a,
+.header .nav a *,
+.suit-header .suit-logo,
+.suit-header .suit-nav,
+.suit-header .suit-nav a,
+.footer-nav a,
+.footer-links a {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+.header .logo img,
+.header a.logo img,
+.header .logo a img,
+.suit-header .suit-logo img {
+  filter: brightness(0) invert(1) !important;
+  opacity: 1 !important;
+}
+.header .nav a:hover,
+.suit-header .suit-nav a:hover,
+.footer-nav a:hover,
+.footer-links a:hover {
+  color: #e6d2a6 !important;
+}
+
+/* Dark blue / purple gradient promotional areas */
+.vk-product-band,
+.vk-product-band > *,
+.vk-product-band h1,
+.vk-product-band h2,
+.vk-product-band h3,
+.vk-product-band p,
+.vk-product-band li,
+.vk-product-band span,
+.vk-product-band small,
+.rakubure,
+.rakubure > div,
+.rakubure .eyebrow,
+.rakubure h1,
+.rakubure h2,
+.rakubure h3,
+.rakubure p,
+.rakubure li,
+.rakubure .rakubure-logo-wrap > span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Light product panels and boxes: dark readable typography */
+.rakubure-visual,
+.rakubure-visual > *,
+.rakubure-visual p,
+.rakubure-visual span,
+.rakubure-visual small,
+.rakubure-visual .rakubure-logo-wrap > span {
+  color: #10243f !important;
+  opacity: 1 !important;
+}
+.rakubure-visual {
+  background: #ffffff !important;
+  border: 1px solid rgba(16,36,63,.12) !important;
+}
+.rakubure-visual .rakubure-list span {
+  color: #10243f !important;
+  background: #f1f4f8 !important;
+  border: 1px solid #dce3eb !important;
+}
+.rakubure-visual > p {
+  color: #34465d !important;
+}
+.rakubure-logo-wrap > span {
+  color: #34465d !important;
+}
+
+/* Keep call-to-action labels legible on their own backgrounds */
+.rakubure-actions .btn-gold {
+  background: #d9bd86 !important;
+  color: #10243f !important;
+}
+.rakubure-actions .btn-line {
+  color: #ffffff !important;
+  border-color: #e6d2a6 !important;
+}
+.vk-product-card,
+.vk-product-card h3,
+.vk-product-card p,
+.vk-product-card span {
+  color: #10243f !important;
+}
+
+</style>
+</head>
+<body>
+<header class="suit-header">
+<a class="suit-logo" href="index.html" aria-label="Version-K ホーム"><img src="images/version-k-logo.png" alt="Version-K KENTO YAMAZAKI"></a>
+<nav class="suit-nav"><a href="index.html">HOME</a><a href="thought.html">PHILOSOPHY</a><a href="#order">ORDER SUIT</a><a href="#independence">INDEPENDENCE</a><a class="nav-contact" href="contact.html?subject=オーダースーツ・独立支援について">CONTACT ↗</a></nav>
+</header>
+<main>
+<section class="lux-hero">
+<div class="hero-photo"></div>
+<div class="hero-content">
+<div class="kicker">VERSION-K / ORDER SUIT & LIFE DESIGN</div>
+<h1><span style="color:#E6D2A6!important;-webkit-text-fill-color:#E6D2A6!important;">出会いをつなぎ、</span><br><em>想いを紡ぐ。</em></h1>
+<div class="hero-line"></div>
+<p>纏う一着に、自分らしさと誇りを。<br>その先にある、新しい挑戦と出会いまで。</p>
+<a class="gold-link" href="#message">OUR PHILOSOPHY <span>↗</span></a>
+</div>
+<div class="hero-index">01 — PERSONAL STYLE</div>
+</section>
+
+<section class="philosophy" id="message">
+<div class="kicker">THE THOUGHT BEHIND THE SUIT</div>
+<h2>一着を仕立てることは、<br>未来への一歩を仕立てること。</h2>
+<p>私たちは、一つひとつの出会いを大切にしながら、人と人、想いと想いを丁寧につないでいくことを理念に掲げています。<br>スーツは、ただ身にまとう服ではありません。新しい仕事に挑むとき、大切な人と向き合うとき、自分の可能性を信じて一歩を踏み出すとき。<br>その人の決意を映し、自信を支える存在でありたい。私たちは一着の先にある、その人らしい未来まで想いを巡らせます。</p>
+</section>
+
+<section class="lux-section" id="order">
+<div class="lux-inner">
+<div class="section-head"><div class="section-no">01 / ORDER</div><h2><small>EASY ORDER SUIT</small>自分らしさを、纏う。</h2></div>
+<div class="suit-intro">
+<div class="intro-copy">
+<div class="kicker">YOUR STYLE, YOUR STORY</div>
+<h3>既製品に自分を合わせるのではなく、<br>自分に合う一着を。</h3>
+<p>イージーオーダーで、体型や好み、着用シーンに合わせたスーツをご提案します。生地、色柄、裏地、ボタン、シルエット。ひとつずつ選びながら、あなたらしさを一着に仕立てていきます。</p>
+<p>初めてのオーダーも、日々の仕事を支える一着も。ご希望やご予算を伺いながら、納得できるスタイルを一緒に考えます。</p>
+<a class="gold-link" style="color:#292d28" href="contact.html?subject=イージーオーダースーツの相談">スーツの相談をする <span>↗</span></a>
+</div>
+<img src="images/suit-portrait-1.jpg" alt="オーダースーツを着用したスタイル">
+</div>
+<div class="feature-row">
+<div class="feature"><b>01 / FIT</b><h4>身体に寄り添うシルエット</h4><p>採寸をもとに、体型や着心地を考えたバランスをご提案します。</p></div>
+<div class="feature"><b>02 / MATERIAL</b><h4>生地から選ぶ楽しさ</h4><p>色・柄・質感。豊富な選択肢から、着る人の個性を表現します。</p></div>
+<div class="feature"><b>03 / DETAIL</b><h4>細部に宿るこだわり</h4><p>裏地やボタンなど、見えない部分にも自分らしさを込められます。</p></div>
+</div>
+</div>
+</section>
+
+<section class="gallery-section">
+<div class="lux-inner">
+<div class="section-head"><div class="section-no">02 / DETAILS</div><h2><small>CRAFTED FOR YOU</small>選ぶ時間も、特別な体験に。</h2></div>
+<div class="gallery-grid">
+<figure><img src="images/suit-fabric-brand.jpg" alt="Version-Kの生地サンプル"><figcaption>FABRIC / 生地に触れ、選ぶ。</figcaption></figure>
+<figure><img src="images/suit-fabric-green.jpg" alt="グリーン系のスーツ生地"><figcaption>COLOR / 色の表情。</figcaption></figure>
+<figure><img src="images/suit-buttons.jpg" alt="スーツボタンのサンプル"><figcaption>BUTTON / 小さな個性。</figcaption></figure>
+<figure><img src="images/suit-tie-detail.jpg" alt="スーツとネクタイのディテール"><figcaption>DETAIL / 細部まで美しく。</figcaption></figure>
+<figure><img src="images/suit-accessories-wide.jpg" alt="ベルトなどの装身具"><figcaption>ACCESSORY / 装いを完成させる。</figcaption></figure>
+<figure><img src="images/suit-fabric-navy.jpg" alt="ネイビー系の生地サンプル"><figcaption>TEXTURE / 質感を選ぶ。</figcaption></figure>
+<figure><img src="images/suit-fabric-versionk.jpg" alt="Version-Kロゴ入りのネイビーとブラックの生地"><figcaption>VERSION-K / ブランドを纏う。</figcaption></figure>
+<figure><img src="images/suit-fabric-patterns.jpg" alt="チェック柄や織り柄の生地サンプル"><figcaption>COLLECTION / 柄と素材の組み合わせ。</figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="lux-section independence" id="independence">
+<div class="lux-inner">
+<div class="section-head"><div class="section-no">03 / INDEPENDENCE</div><h2><small>SUPPORT YOUR NEXT CHAPTER</small>独立したい。その想いを、ひとりにしない。</h2></div>
+<div class="suit-intro">
+<div class="intro-copy">
+<div class="kicker">BEYOND THE SUIT</div>
+<h3>挑戦する人の、<br>最初の味方でありたい。</h3>
+<p>独立したい。自分の事業を持ちたい。今の働き方を変えたい。そんな想いを持つ方の声に耳を傾け、実現に向けた一歩を一緒に考えます。</p>
+<p>事業の方向性や準備の整理、必要な情報の共有、専門家や協業先との接点づくりなど、状況に応じてサポートします。まだ考えがまとまっていなくても構いません。まずは、あなたが描いている未来を聞かせてください。</p>
+</div>
+<img src="images/suit-model-coat.jpg" alt="自分らしいスタイルで挑戦するイメージ">
+</div>
+<div class="support-flow">
+<div class="flow-card"><span>STEP 01</span><h4>想いを言葉にする</h4><p>目指したい働き方や実現したいこと、現在の状況を丁寧に伺います。</p></div>
+<div class="flow-card"><span>STEP 02</span><h4>一歩目を明確にする</h4><p>必要な準備や課題を整理し、今できることから順番に考えます。</p></div>
+<div class="flow-card"><span>STEP 03</span><h4>人と機会をつなぐ</h4><p>ご希望に応じて、専門家・事業者・協業先などとの出会いをつなぎます。</p></div>
+</div>
+<p class="suit-note">※ 独立・起業支援は、相談・情報提供・必要に応じた関係先のご紹介を行うものです。事業の成功、資金調達、売上等を保証するものではありません。法務・税務・労務等の専門的な判断は各専門家へご相談ください。</p>
+</div>
+</section>
+
+<section class="promise">
+<div class="kicker">OUR PROMISE</div>
+<h2>一着から始まるご縁を、<br>その先の未来へ。</h2>
+<p>私たちが届けたいのは、スーツそのものだけではありません。新しい挑戦への自信、誰かとの出会い、自分らしい未来へ踏み出すきっかけ。<br>一人ひとりの想いに向き合い、その人の「次のVersion」をともにつくっていきます。</p>
+</section>
+<section class="contact-panel">
+<div class="kicker">LET'S TALK ABOUT YOUR NEXT STEP</div>
+<h2>あなたの想いを、聞かせてください。</h2>
+<p>スーツのご相談も、独立に向けたご相談も。<br>まだ形になっていない想いから、お聞かせください。</p>
+<a class="contact-button" href="contact.html?subject=オーダースーツ・独立支援について">CONTACT / ご相談・お問い合わせ　↗</a>
+</section>
+</main>
+<footer class="suit-footer">
+<div class="footer-top"><a class="suit-logo" href="index.html" aria-label="Version-K ホーム"><img src="images/version-k-logo.png" alt="Version-K KENTO YAMAZAKI"></a><nav class="footer-links"><a href="index.html">HOME</a><a href="thought.html">PHILOSOPHY</a><a href="index.html#business">BUSINESS</a><a href="company.html">COMPANY</a><a href="contact.html">CONTACT</a></nav></div>
+<div class="footer-bottom"><span>© <span id="year"></span> Version-K. All Rights Reserved.</span><span>YOUR NEXT VERSION STARTS HERE.</span></div>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+<script src="modern-motion.js"></script><script src="vk-motion.js" defer></script>
+</body>
+</html>
