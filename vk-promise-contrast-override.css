@@ -1,0 +1,31 @@
+/* Version-K: high-contrast promise section */
+html body.thought-page main section.section.dark-section{
+  background:linear-gradient(115deg,#0B1B30 0%,#132B46 58%,#18324E 100%) !important;
+  color:#F7F9FC !important;
+  -webkit-text-fill-color:#F7F9FC !important;
+}
+html body.thought-page main section.section.dark-section > p.eyebrow{
+  color:#E8D4A6 !important;
+  -webkit-text-fill-color:#E8D4A6 !important;
+  opacity:1 !important;
+  font-weight:700 !important;
+  letter-spacing:.22em !important;
+}
+html body.thought-page main section.section.dark-section > h2{
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+  opacity:1 !important;
+  text-shadow:none !important;
+  font-weight:700 !important;
+}
+html body.thought-page main section.section.dark-section > p.lead{
+  color:#E4EAF2 !important;
+  -webkit-text-fill-color:#E4EAF2 !important;
+  opacity:1 !important;
+  font-weight:500 !important;
+  line-height:2.15 !important;
+}
+html body.thought-page main section.section.dark-section ::selection{
+  background:#E8D4A6;
+  color:#10243D;
+}

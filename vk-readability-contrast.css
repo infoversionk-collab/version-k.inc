@@ -1,0 +1,167 @@
+
+/* VERSION-K contrast and readability corrections */
+:root{
+  --vk-readable-ink:#17243A;
+  --vk-readable-muted:#53627A;
+  --vk-readable-light:#F4F7FA;
+  --vk-readable-on-dark:#F5F7FB;
+  --vk-readable-muted-on-dark:#CBD4E2;
+}
+
+/* BPO: white process cards sit on a dark section; text must remain dark on white. */
+.bpo-page .bpo-flow .flow-item{
+  background:#F4F7FA!important;
+  color:var(--vk-readable-ink)!important;
+  opacity:1!important;
+}
+.bpo-page .bpo-flow .flow-item b{
+  color:#087F86!important;
+  opacity:1!important;
+}
+.bpo-page .bpo-flow .flow-item h3{
+  color:#17243A!important;
+  opacity:1!important;
+  font-weight:750!important;
+}
+.bpo-page .bpo-flow .flow-item p{
+  color:#53627A!important;
+  opacity:1!important;
+}
+.bpo-page .bpo-flow h2{color:#F5F7FB!important}
+.bpo-page .bpo-flow .bpo-lead{color:#CBD4E2!important}
+
+/* THOUGHT: strong contrast on the light philosophy section. */
+.thought-page .hero .hero-inner{width:min(1120px,calc(100% - 48px));max-width:1120px}
+.thought-page .hero h1{
+  max-width:none!important;
+  width:100%;
+  font-size:clamp(30px,5.3vw,78px)!important;
+  line-height:1.38!important;
+  letter-spacing:.015em;
+}
+.thought-page .thought-title-line{
+  display:block;
+  white-space:nowrap;
+}
+.thought-page .hero h1 em{
+  color:#E8D4A6!important;
+  background:none!important;
+  -webkit-text-fill-color:#E8D4A6!important;
+}
+.thought-page .section.reveal{
+  background:#F3F6F7!important;
+  color:#17243A!important;
+}
+.thought-page .section.reveal .section-tag,
+.thought-page .section.reveal .eyebrow.dark{
+  color:#087F86!important;
+  opacity:1!important;
+}
+.thought-page .section.reveal h2,
+.thought-page .section.reveal h3{
+  color:#17243A!important;
+  opacity:1!important;
+}
+.thought-page .section.reveal .lead,
+.thought-page .section.reveal .point p{
+  color:#4B5B73!important;
+  opacity:1!important;
+  font-weight:500!important;
+}
+.thought-page .section.reveal .point{
+  background:#FFFFFF!important;
+  color:#17243A!important;
+}
+.thought-page .section.reveal .point b{color:#087F86!important}
+.thought-page .dark-section{
+  background:#101827!important;
+  color:#F5F7FB!important;
+}
+.thought-page .dark-section h2{color:#FFFFFF!important}
+.thought-page .dark-section .lead{color:#D2DAE6!important}
+
+/* DIGITAL hero: white headline and readable supporting copy over the dark image. */
+.digital-page .digital-hero:after{
+  background:linear-gradient(100deg,rgba(10,20,38,.96),rgba(10,20,38,.76) 58%,rgba(10,20,38,.38))!important;
+}
+.digital-page .digital-hero h1{color:#FFFFFF!important}
+.digital-page .digital-hero h1 em{
+  color:#E8D4A6!important;
+  background:none!important;
+  -webkit-text-fill-color:#E8D4A6!important;
+}
+.digital-page .digital-hero .hero-copy{
+  color:#F1F4F8!important;
+  opacity:1!important;
+  font-weight:550!important;
+}
+
+/* DIGITAL light content sections: dark ink on light backgrounds. */
+.digital-page .digital-section:not(.digital-dark){
+  background:#F3F6F7!important;
+  color:#17243A!important;
+}
+.digital-page .digital-section:not(.digital-dark) h2,
+.digital-page .digital-section:not(.digital-dark) h3{
+  color:#17243A!important;
+  opacity:1!important;
+}
+.digital-page .digital-section:not(.digital-dark) .lead,
+.digital-page .digital-section:not(.digital-dark) p{
+  color:#4B5B73!important;
+  opacity:1!important;
+}
+.digital-page .digital-section:not(.digital-dark) .eyebrow,
+.digital-page .digital-section:not(.digital-dark) .digital-kicker{
+  color:#087F86!important;
+  opacity:1!important;
+}
+.digital-page .digital-section:not(.digital-dark) .digital-quote{
+  color:#17243A!important;
+}
+.digital-page .digital-section:not(.digital-dark) .digital-quote em{
+  color:#087F86!important;
+}
+
+/* DIGITAL dark build section: white headings and legible muted copy. */
+.digital-page .digital-dark{
+  background:#101827!important;
+  color:#F5F7FB!important;
+}
+.digital-page .digital-dark h2,
+.digital-page .digital-dark h3{
+  color:#FFFFFF!important;
+  opacity:1!important;
+}
+.digital-page .digital-dark .lead,
+.digital-page .digital-dark .flow-step p{
+  color:#D2DAE6!important;
+  opacity:1!important;
+}
+.digital-page .digital-dark .eyebrow,
+.digital-page .digital-dark .digital-kicker,
+.digital-page .digital-dark .flow-step b{
+  color:#54DCD3!important;
+  opacity:1!important;
+}
+.digital-page .digital-dark .flow-step{
+  background:#F4F7FA!important;
+  color:#17243A!important;
+}
+.digital-page .digital-dark .flow-step h3{color:#17243A!important}
+.digital-page .digital-dark .flow-step p{color:#53627A!important}
+.digital-page .digital-dark .digital-tech span{
+  color:#17243A!important;
+  background:#F4F7FA!important;
+  border-color:#D8E0EA!important;
+}
+
+@media(max-width:760px){
+  .thought-page .hero .hero-inner{width:calc(100% - 40px)}
+  .thought-page .hero h1{font-size:clamp(27px,7.2vw,44px)!important;line-height:1.55!important}
+  .thought-page .thought-title-line{white-space:nowrap}
+  .digital-page .digital-hero h1{font-size:clamp(32px,8vw,46px)!important}
+}
+@media(max-width:360px){
+  .thought-page .hero h1{font-size:26px!important}
+}
