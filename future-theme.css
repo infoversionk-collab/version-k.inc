@@ -1,0 +1,168 @@
+/* =========================================================
+   VERSION-K / FUTURE EVOLUTION THEME
+   Brand palette: Graphite / Electric Cyan / Digital Violet / Neon Lime
+   Original site imagery, page architecture and brand logo are retained.
+   ========================================================= */
+:root{
+ --vk-navy:#10131F!important;--vk-navy-2:#1B2134!important;
+ --vk-gold:#36D9D0!important;--vk-gold-light:#A1FFF0!important;
+ --vk-paper:#F3F6F7!important;--vk-ink:#10131F!important;
+ --vk-muted:#6F7788!important;--vk-text-strong:#10131F!important;
+ --vk-text-body:#343B4B!important;--vk-text-muted:#6F7788!important;
+ --vk-gold-on-light:#655BEA!important;--vk-gold-on-dark:#36D9D0!important;
+ --navy:#10131F!important;--navy2:#1B2134!important;--blue:#655BEA!important;
+ --gold:#36D9D0!important;--paper:#F3F6F7!important;--ink:#10131F!important;
+ --muted:#6F7788!important;--line:#DCE2E8!important;
+ --future-cyan:#36D9D0;--future-violet:#8274FF;--future-lime:#D8FF62;
+}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP",sans-serif!important}
+.site-header,.header,.suit-header{
+ background:rgba(16,19,31,.96)!important;
+ border-bottom:1px solid rgba(54,217,208,.24)!important;
+ box-shadow:0 12px 35px rgba(6,10,22,.22)!important;
+ backdrop-filter:blur(16px);
+}
+.site-header .brand img,.header .logo img,.suit-header .suit-logo img{
+ filter:brightness(0) invert(1)!important;
+}
+.main-nav,.nav,.suit-nav{color:#F3F6F7!important}
+.main-nav a:hover,.nav a:hover,.suit-nav a:hover{color:#36D9D0!important}
+.main-nav .nav-contact,.nav-cta,.suit-nav .nav-contact{
+ border-color:#36D9D0!important;color:#fff!important;
+}
+.nav-contact span,.nav-cta span{color:#36D9D0!important}
+.menu-toggle span,.menu-btn span,.menu-toggle i{background:#36D9D0!important}
+.hero,.lux-hero,.clean-page .hero,.yutaka-page .hero{
+ background-color:#10131F!important;color:#fff!important;
+}
+.hero:after,.career-hero:after,.digital-hero:after,.clean-page .hero:after,.yutaka-page .hero:after{
+ background:linear-gradient(100deg,rgba(16,19,31,.94),rgba(24,30,51,.62) 58%,rgba(16,19,31,.22))!important;
+}
+.hero h1,.hero h2,.hero .hero-title{color:#fff}
+.hero h1 em,.hero .eyebrow,.eyebrow,.section-tag,.section-kicker,.overline,.digital-kicker,.section-tag,.tile small,.card-number{
+ color:#36D9D0!important;
+}
+.hero h1 em{background:linear-gradient(100deg,#36D9D0,#A9A1FF,#D8FF62);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.button-gold,.btn-dark,.btn-primary,.btn-gold,.cta-button{
+ background:#36D9D0!important;color:#10131F!important;border-color:#36D9D0!important;
+}
+.btn-outline,.nav-cta,.suit-nav .nav-contact{border-color:#36D9D0!important}
+.button-gold:hover,.btn:hover{box-shadow:0 12px 32px rgba(54,217,208,.18)}
+.text-link span,.card-arrow b,.product-link b{color:#655BEA!important}
+a:hover{color:#655BEA}
+.section,.company-content,.career-section,.digital-section,.clean-page,.contact-content{
+ background-color:#F3F6F7!important;color:#10131F!important;
+}
+.section h2,.company-content h2,.company-content h3,.career-section h2,.career-section h3,
+.digital-section h2,.digital-section h3,.clean-page h2,.clean-page h3,
+.company-intro,.profile-table td,.profile-table th{color:#10131F}
+p,.lead,.hero-copy,.hero-description{ }
+.tile,.business-card,.digital-card,.career-values article,.point,.value-card,.contact-card{
+ border-color:rgba(130,116,255,.2)!important;
+}
+.tile,.business-card,.digital-card,.career-values article{background:#fff!important}
+.tile small,.card-number,.digital-card .num,.career-values b{color:#655BEA!important}
+.soft,.cta,.career-quote,.company-content,.digital-section,.clean-page .clean-section{
+ background:#E9EEF0!important;
+}
+.dark-section,.career-message,.digital-quote-band,.footer,.site-footer,.contact-banner,
+.suit-footer,.yutaka-cta,.clean-page .clean-cta{
+ background:#10131F!important;color:#fff!important;
+}
+.dark-section h2,.dark-section h3,.career-message h2,.footer,.site-footer,.contact-banner h2{color:#fff!important}
+.dark-section p,.career-message p,.contact-banner p{color:#C4CBD8!important}
+.footer a:hover,.site-footer a:hover{color:#36D9D0!important}
+.profile-table{background:#fff!important}
+.profile-table th{background:#E9EEF0!important;color:#655BEA!important}
+.profile-table td{color:#343B4B!important}
+.profile-table th,.profile-table td{border-color:#DCE2E8!important}
+.business-gallery figure{background:#fff!important;border-color:#DCE2E8!important}
+.business-gallery figcaption{color:#10131F!important}
+.product-item{border-color:rgba(54,217,208,.28)!important}
+.product-item:hover{background:rgba(54,217,208,.05)!important}
+.product-meta,.product-link{color:#36D9D0!important}
+.contact-banner{position:relative;overflow:hidden}
+.contact-banner:before,.contact-section:before{
+ content:"";position:absolute;inset:0;pointer-events:none;
+ background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+ background-size:54px 54px;mask-image:linear-gradient(90deg,black,transparent);
+}
+.contact-banner-inner,.contact-panel{position:relative;z-index:1}
+.banner-mark{color:rgba(54,217,208,.16)!important}
+input:focus,textarea:focus,select:focus{outline:2px solid #36D9D0!important;border-color:#36D9D0!important}
+button:focus-visible,a:focus-visible{outline:2px solid #D8FF62!important;outline-offset:4px}
+.site-footer .footer-bottom{border-color:rgba(54,217,208,.2)!important}
+.card-career,.card-bpo{position:relative}
+@media(max-width:760px){
+ .main-nav,.nav,.suit-nav{background:rgba(16,19,31,.98)!important}
+ .site-header,.header,.suit-header{background:rgba(16,19,31,.98)!important}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
+}
+
+/* Original specialist pages: retain their layouts and photos while aligning their palettes. */
+.hero-photo{background-image:url("images/business-system.png")!important;background-position:center 42%!important;opacity:.38!important}
+.yutaka-page{background:#F3F6F7!important;color:#10131F!important}
+.yutaka-page .section,.yutaka-page .yutaka-food,.yutaka-page .yutaka-intro{background:#F3F6F7!important;color:#10131F!important}
+.yutaka-page .section.soft,.yutaka-page .yutaka-values,.yutaka-page .yutaka-value{background:#E9EEF0!important;color:#10131F!important}
+.yutaka-page .section h2,.yutaka-page .section h3,.yutaka-page .yutaka-value h3{color:#10131F!important}
+.yutaka-page .lead,.yutaka-page p,.yutaka-page li{color:#596477}
+.yutaka-page .section-tag,.yutaka-page .num,.yutaka-page .eyebrow{color:#36D9D0!important}
+.yutaka-page .yutaka-value{border-top-color:#8274FF!important}
+.yutaka-page .yutaka-cta{background:#10131F!important;color:#fff!important}
+.clean-page{--navy:#10131F!important;--navy2:#1B2134!important;--gold:#36D9D0!important;--gold-light:#A1FFF0!important;--ink:#10131F!important;--paper:#F3F6F7!important}
+.clean-page .clean-section,.clean-page .clean-content{background:#F3F6F7!important;color:#10131F!important}
+.clean-page .section-tag,.clean-page .eyebrow{color:#36D9D0!important}
+.clean-page .clean-card,.clean-page .clean-service-card{border-color:rgba(130,116,255,.25)!important}
+.lux-hero{background:#10131F!important}
+.lux-hero:before{background:linear-gradient(90deg,rgba(16,19,31,.94),rgba(16,19,31,.68) 55%,rgba(16,19,31,.2))!important}
+.lux-section{background:#F3F6F7!important;color:#10131F!important}
+.lux-section h2,.lux-section h3,.suit-intro h2{color:#10131F!important}
+.lux-section p,.suit-intro p,.suit-note{color:#596477!important}
+.suit-footer{background:#10131F!important;color:#fff!important}
+.gold-link,.section-no,.kicker{color:#36D9D0!important}
+.career-values article,.digital-card,.business-gallery figure{border-top-color:#36D9D0!important}
+.company-content{background:#F3F6F7!important}
+.company-content .profile-table th{background:#E9EEF0!important;color:#655BEA!important}
+.company-content .profile-table td{color:#343B4B!important}
+.contact-panel .vk-submit,.vk-submit{background:#36D9D0!important;color:#10131F!important;border-color:#36D9D0!important}
+.contact-panel .category-option:has(input:checked){border-color:#36D9D0!important;background:rgba(54,217,208,.08)!important}
+
+/* Home portal motion language */
+.site-header .brand img{transition:filter .3s}
+.hero{isolation:isolate}
+.site-header + main .hero:before{
+ content:"";position:absolute;z-index:1;right:7%;top:17%;width:min(34vw,420px);aspect-ratio:1;
+ border:1px solid rgba(54,217,208,.34);border-radius:50%;
+ box-shadow:inset 0 0 70px rgba(54,217,208,.06),0 0 90px rgba(130,116,255,.12);
+ animation:vk-orbit 18s linear infinite;pointer-events:none;
+}
+.site-header + main .hero:before{background:radial-gradient(circle,rgba(130,116,255,.10),transparent 64%)}
+.hero-index{color:#A1FFF0!important}
+.hero-index span{color:#36D9D0!important}
+.hero-side-note{color:#36D9D0!important}
+.hero h1 em{background:linear-gradient(100deg,#36D9D0,#A9A1FF,#D8FF62);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.button-gold{box-shadow:0 10px 35px rgba(54,217,208,.16)}
+.business-card{border:1px solid rgba(130,116,255,.16)!important;transition:transform .35s,box-shadow .35s,border-color .35s!important}
+.business-card:hover{border-color:#36D9D0!important;box-shadow:0 20px 55px rgba(16,19,31,.13)!important}
+.business-card .card-number{color:#655BEA!important}
+.product-section{background:#10131F!important;color:#fff!important}
+.product-section h2,.product-section h3{color:#fff!important}
+.product-section p{color:#C4CBD8!important}
+.product-item{border-color:rgba(54,217,208,.24)!important}
+.product-item img{filter:drop-shadow(0 0 20px rgba(54,217,208,.1))}
+.value-strip b{color:#655BEA!important}
+@keyframes vk-orbit{to{transform:rotate(360deg)}}
+@media(max-width:760px){.site-header + main .hero:before{width:230px;right:-70px;top:20%;opacity:.5}}
+
+.footer-brand img,.footer a img,.site-footer .footer-brand img,.footer-top img{
+ filter:brightness(0) invert(1)!important;
+}
+.digital-quote em,.digital-card .num,.career-values b,.tile small,.section-tag,.yutaka-page .section-tag{
+ color:#655BEA!important;
+}
+.clean-page .eyebrow,.clean-page .section-tag,.clean-page .eyebrow.dark{color:#36D9D0!important}
+.yutaka-page .yutaka-logo-line,.yutaka-page .yutaka-food-note strong{color:#36D9D0!important}
+.suit-nav .nav-contact,.contact-button,.gold-link{border-color:#36D9D0!important;color:#36D9D0!important}
