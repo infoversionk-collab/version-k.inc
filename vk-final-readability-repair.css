@@ -1,0 +1,169 @@
+
+/* =========================================================
+   VERSION-K FINAL READABILITY REPAIR
+   Strong contrast on dark sections + legible bilingual nav.
+   ========================================================= */
+:root{
+  --vk-ink:#14243B;
+  --vk-copy:#46566D;
+  --vk-white:#FFFFFF;
+  --vk-soft-white:#E5EBF3;
+  --vk-gold:#E8D4A6;
+  --vk-cyan:#36D9D0;
+}
+html,body,button,input,textarea,select{
+  font-family:Inter,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif!important;
+}
+
+/* Bilingual header: larger, clearer, and consistently aligned. */
+.header .nav{
+  gap:clamp(10px,1.1vw,20px)!important;
+}
+.header .nav a{
+  min-width:50px!important;
+  padding:7px 2px!important;
+  gap:3px!important;
+  color:#FFFFFF!important;
+  text-shadow:none!important;
+}
+.header .nav .vk-nav-en{
+  font-size:12px!important;
+  font-weight:750!important;
+  line-height:1.2!important;
+  letter-spacing:.045em!important;
+  color:#FFFFFF!important;
+}
+.header .nav .vk-nav-ja{
+  font-size:10px!important;
+  font-weight:600!important;
+  line-height:1.2!important;
+  letter-spacing:.015em!important;
+  color:#E4EAF2!important;
+  opacity:1!important;
+}
+.header .nav .nav-cta{
+  min-width:120px!important;
+  padding:10px 14px!important;
+  border-radius:999px!important;
+}
+.header .nav .nav-cta .vk-nav-en{font-size:11px!important}
+.header .nav .nav-cta .vk-nav-ja{font-size:10px!important}
+.header .nav a:hover .vk-nav-en,
+.header .nav a:hover .vk-nav-ja{color:var(--vk-gold)!important}
+
+@media(max-width:1100px){
+  .header .nav{gap:8px!important}
+  .header .nav a{min-width:44px!important}
+  .header .nav .vk-nav-en{font-size:10px!important}
+  .header .nav .vk-nav-ja{font-size:9px!important}
+}
+@media(max-width:760px){
+  .header .nav{gap:12px!important}
+  .header .nav a{min-width:0!important;padding:10px 0!important}
+  .header .nav .vk-nav-en{font-size:12px!important}
+  .header .nav .vk-nav-ja{font-size:10px!important}
+}
+
+/* Main dark sections: the previous global h2 rule made headings nearly black
+   against navy. Override headings, eyebrow labels and body copy explicitly. */
+main .dark-section{
+  background:linear-gradient(118deg,#0D1B2D 0%,#142B47 58%,#192F4B 100%)!important;
+  color:#FFFFFF!important;
+  padding:clamp(64px,7vw,108px) clamp(24px,10%,160px)!important;
+}
+main .dark-section h1,
+main .dark-section h2,
+main .dark-section h3,
+main .dark-section h4,
+main .dark-section strong{
+  color:#FFFFFF!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+main .dark-section .eyebrow,
+main .dark-section .section-tag,
+main .dark-section .section-label{
+  color:#E8D4A6!important;
+  opacity:1!important;
+  font-weight:700!important;
+}
+main .dark-section p,
+main .dark-section .lead,
+main .dark-section li{
+  color:#E1E8F1!important;
+  opacity:1!important;
+  font-weight:450!important;
+}
+main .dark-section .lead{
+  max-width:850px!important;
+  font-size:clamp(15px,1.15vw,18px)!important;
+  line-height:2.15!important;
+}
+main .dark-section h2{
+  font-size:clamp(30px,3.5vw,48px)!important;
+  line-height:1.5!important;
+  letter-spacing:.035em!important;
+  margin:14px 0 22px!important;
+}
+main .dark-section .point h3{color:#FFFFFF!important}
+main .dark-section .point p{color:#D2DCE8!important}
+main .dark-section .point b{color:#E8D4A6!important}
+
+/* Specific page section from the supplied screenshot. */
+body.thought-page main .dark-section{
+  min-height:0!important;
+  display:block!important;
+  padding-top:clamp(72px,7vw,112px)!important;
+  padding-bottom:clamp(72px,7vw,112px)!important;
+}
+body.thought-page main .dark-section > .eyebrow{
+  color:#E8D4A6!important;
+  font-size:12px!important;
+  letter-spacing:.2em!important;
+  margin:0 0 18px!important;
+}
+body.thought-page main .dark-section > h2{
+  color:#FFFFFF!important;
+  font-size:clamp(34px,4vw,52px)!important;
+  line-height:1.45!important;
+  margin:0 0 24px!important;
+}
+body.thought-page main .dark-section > .lead{
+  color:#E1E8F1!important;
+  font-size:clamp(15px,1.2vw,18px)!important;
+  line-height:2.2!important;
+  max-width:900px!important;
+}
+
+/* Light backgrounds retain dark copy; prevent pale text from leaking in. */
+main .section:not(.dark-section),
+main .section:not(.dark-section) h1,
+main .section:not(.dark-section) h2,
+main .section:not(.dark-section) h3,
+main .section:not(.dark-section) h4{
+  color:var(--vk-ink)!important;
+}
+main .section:not(.dark-section) p,
+main .section:not(.dark-section) li,
+main .section:not(.dark-section) .lead{
+  color:var(--vk-copy)!important;
+  opacity:1!important;
+}
+main .section:not(.dark-section) .eyebrow,
+main .section:not(.dark-section) .section-tag{
+  color:#75602F!important;
+  opacity:1!important;
+}
+
+/* CTA bands must also preserve readable contrast. */
+main .cta{
+  background:#10243D!important;
+  color:#FFFFFF!important;
+}
+main .cta h1,main .cta h2,main .cta h3{color:#FFFFFF!important;opacity:1!important}
+main .cta p{color:#E1E8F1!important;opacity:1!important}
+main .cta .btn,main .cta .btn-dark{
+  background:#E8D4A6!important;
+  color:#10243D!important;
+  border:1px solid #E8D4A6!important;
+}

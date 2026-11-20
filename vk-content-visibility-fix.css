@@ -1,0 +1,26 @@
+/* VERSION-K emergency content visibility safeguard.
+   Scroll-reveal scripts must never make the actual page content disappear.
+   Keep the visual design and hover/hero effects; disable only opacity-based reveal hiding. */
+html body .vk-reveal,
+html body .reveal,
+html body .vk-reveal.is-visible,
+html body .vk-reveal.vk-visible,
+html body .reveal.is-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+/* The first screen and all primary content remain visible if JavaScript is blocked,
+   delayed, or an IntersectionObserver callback does not run. */
+html body main,
+html body main > section,
+html body main > section > *,
+html body .hero,
+html body .hero-content,
+html body .hero-inner,
+html body .bpo-hero,
+html body .bpo-hero-content {
+  visibility: visible;
+}

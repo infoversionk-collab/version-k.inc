@@ -1,0 +1,51 @@
+/* VERSION-K / BPO REFERENCE LAYOUT SYSTEM
+   Shared card language, responsive grids and motion for every page. */
+:root{--vk-card-radius:10px;--vk-card-border:rgba(130,116,255,.22);--vk-card-shadow:0 12px 34px rgba(16,19,31,.07);--vk-card-shadow-hover:0 24px 58px rgba(16,19,31,.15)}
+*,*::before,*::after{box-sizing:border-box}
+img,svg,video{max-width:100%}
+body{overflow-x:clip}
+main{width:100%;min-width:0}
+/* Common page rhythm */
+main section:not(.hero):not(.company-hero):not(.career-hero):not(.bpo-hero):not(.lux-hero):not(.contact-hero){scroll-margin-top:92px}
+:is(.section,.career-section,.digital-section,.lux-section,.bpo-wrap,.company-content,.contact-main,.clean-section,.yutaka-intro,.yutaka-food,.yutaka-values,.privacy-panel){padding-left:clamp(20px,6vw,96px)!important;padding-right:clamp(20px,6vw,96px)!important}
+/* BPO-like unified cards: fine border, top accent, soft glass highlight */
+:is(.bpo-service,.business-card,.digital-card,.career-values article,.career-flow article,.clean-service,.clean-value,.yutaka-value,.point,.feature,.flow-card,.flow-item,.job,.privacy-block,.guide-item,.category-option,.product-item,.business-gallery figure,.profile-table,.contact-form-card,.contact-aside,.value-card,.service-card,.card){
+ position:relative;isolation:isolate;min-width:0;overflow:hidden;border:1px solid var(--vk-card-border)!important;border-top:3px solid var(--vk-cyan)!important;border-radius:var(--vk-card-radius)!important;background:rgba(255,255,255,.96)!important;box-shadow:var(--vk-card-shadow);transition:transform .42s cubic-bezier(.2,.75,.25,1),box-shadow .42s,border-color .42s,background .42s!important
+}
+:is(.bpo-service,.business-card,.digital-card,.career-values article,.career-flow article,.clean-service,.clean-value,.yutaka-value,.point,.feature,.flow-card,.flow-item,.job,.privacy-block,.guide-item,.category-option,.product-item,.business-gallery figure,.value-card,.service-card,.card):nth-child(3n+2){border-top-color:var(--vk-violet)!important}
+:is(.bpo-service,.business-card,.digital-card,.career-values article,.career-flow article,.clean-service,.clean-value,.yutaka-value,.point,.feature,.flow-card,.flow-item,.job,.privacy-block,.guide-item,.category-option,.product-item,.business-gallery figure,.value-card,.service-card,.card)::after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(115deg,transparent 15%,rgba(54,217,208,.075) 48%,transparent 78%);transform:translateX(-115%) skewX(-12deg);transition:transform .85s cubic-bezier(.2,.75,.25,1);pointer-events:none}
+@media(hover:hover) and (pointer:fine){
+ :is(.bpo-service,.business-card,.digital-card,.career-values article,.career-flow article,.clean-service,.clean-value,.yutaka-value,.point,.feature,.flow-card,.flow-item,.job,.privacy-block,.guide-item,.category-option,.product-item,.business-gallery figure,.value-card,.service-card,.card):hover{transform:translateY(-7px);box-shadow:var(--vk-card-shadow-hover);border-color:rgba(54,217,208,.62)!important}
+ :is(.bpo-service,.business-card,.digital-card,.career-values article,.career-flow article,.clean-service,.clean-value,.yutaka-value,.point,.feature,.flow-card,.flow-item,.job,.privacy-block,.guide-item,.category-option,.product-item,.business-gallery figure,.value-card,.service-card,.card):hover::after{transform:translateX(115%) skewX(-12deg)}
+}
+/* Responsive grid rules modeled on BPO's service and process blocks */
+:is(.bpo-services,.business-grid,.business-cards,.digital-cards,.career-values,.clean-services,.yutaka-values,.points,.feature-row,.gallery-grid,.support-flow,.flow-grid,.guide-grid,.jobs-grid,.product-grid){display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.8vw,22px);align-items:stretch}
+:is(.flow-grid,.support-flow,.career-flow,.digital-flow,.yutaka-food-steps){grid-template-columns:repeat(4,minmax(0,1fr))}
+:is(.bpo-services,.business-grid,.business-cards,.digital-cards,.career-values,.clean-services,.yutaka-values,.points,.feature-row,.gallery-grid,.support-flow,.flow-grid,.guide-grid,.jobs-grid,.product-grid)>*{height:100%;min-width:0}
+:is(.bpo-service,.business-card,.digital-card,.career-values article,.career-flow article,.clean-service,.clean-value,.yutaka-value,.point,.feature,.flow-card,.flow-item,.job,.privacy-block,.guide-item,.category-option,.product-item){padding:clamp(18px,2.2vw,30px)!important}
+/* Unified content width and headings */
+:is(.bpo-wrap,.section-wrap,.company-content,.career-section,.digital-section,.lux-section,.contact-main,.privacy-panel){width:100%;max-width:none;margin-inline:auto}
+:is(.bpo-wrap,.section-wrap,.career-section,.digital-section,.lux-section) h2{line-height:1.35;letter-spacing:-.025em}
+:is(.bpo-label,.section-tag,.section-kicker,.digital-kicker,.eyebrow,.overline,.kicker){font-family:Manrope,"Noto Sans JP",sans-serif;letter-spacing:.16em}
+/* Dark process / CTA panels retain BPO's contrasting section treatment */
+:is(.dark-section,.career-message,.digital-quote-band,.contact-banner,.yutaka-cta,.clean-cta,.bpo-flow,.cta,.product-section){background-color:#10131F!important;color:#F3F6F7!important;border-top:1px solid rgba(54,217,208,.22)}
+:is(.dark-section,.career-message,.digital-quote-band,.contact-banner,.yutaka-cta,.clean-cta,.bpo-flow,.cta,.product-section) :is(h2,h3,p,li){color:inherit}
+/* Forms and tables */
+:is(input,textarea,select){max-width:100%;border-radius:6px}
+:is(.profile-table,table){width:100%;border-collapse:collapse;overflow:hidden}
+/* Mobile: no fixed desktop widths, touch-friendly spacing, one-column cards */
+@media(max-width:900px){
+ :is(.bpo-services,.business-grid,.business-cards,.digital-cards,.career-values,.clean-services,.yutaka-values,.points,.feature-row,.gallery-grid,.guide-grid,.jobs-grid,.product-grid){grid-template-columns:repeat(2,minmax(0,1fr))}
+ :is(.flow-grid,.support-flow,.career-flow,.digital-flow,.yutaka-food-steps){grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:640px){
+ :is(.section,.career-section,.digital-section,.lux-section,.bpo-wrap,.company-content,.contact-main,.clean-section,.yutaka-intro,.yutaka-food,.yutaka-values,.privacy-panel){padding-left:18px!important;padding-right:18px!important}
+ :is(.bpo-services,.business-grid,.business-cards,.digital-cards,.career-values,.clean-services,.yutaka-values,.points,.feature-row,.gallery-grid,.support-flow,.flow-grid,.guide-grid,.jobs-grid,.product-grid,.career-flow,.digital-flow,.yutaka-food-steps){grid-template-columns:minmax(0,1fr)!important;gap:14px!important}
+ :is(.bpo-service,.business-card,.digital-card,.career-values article,.career-flow article,.clean-service,.clean-value,.yutaka-value,.point,.feature,.flow-card,.flow-item,.job,.privacy-block,.guide-item,.category-option,.product-item){padding:20px!important}
+ :is(.hero,.company-hero,.career-hero,.bpo-hero,.lux-hero,.contact-hero){min-height:unset!important;min-height:72svh!important;padding-top:clamp(76px,13vh,120px)!important;padding-bottom:clamp(70px,12vh,110px)!important}
+ :is(.hero h1,.company-hero h1,.career-hero h1,.bpo-hero h1,.lux-hero h1,.contact-hero h1){font-size:clamp(32px,9vw,46px)!important;line-height:1.35!important;overflow-wrap:anywhere}
+ :is(.lead,.bpo-lead,.hero-description,.hero-copy p){font-size:14px!important;line-height:1.95!important}
+ :is(.btn,.button,.button-gold,.bpo-btn,.nav-contact,.contact-button){min-height:48px;max-width:100%;white-space:normal}
+ :is(.profile-table,table){display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
+@media(prefers-reduced-motion:reduce){:is(.bpo-service,.business-card,.digital-card,.career-values article,.career-flow article,.clean-service,.clean-value,.yutaka-value,.point,.feature,.flow-card,.flow-item,.job,.privacy-block,.guide-item,.category-option,.product-item,.business-gallery figure,.value-card,.service-card,.card){transition:none!important;transform:none!important}}
